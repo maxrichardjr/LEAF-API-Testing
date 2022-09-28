@@ -159,7 +159,7 @@
 						"exec": [
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
-							"    const jsonIDs = response.map(catID => catID.actionType);         //jsonIDs is the array containing IDs\r",
+							"    const jsonIDs = response.map(jsonID => jsonID.actionType);      //jsonIDs is the array containing IDs\r",
 							"    //console.log(jsonIDs);\r",
 							"    pm.variables.set('jsonIDs', jsonIDs); //Creates a variable or updates an existing one.\r",
 							"                                        //2nd jsonIDs is the var defined on line 3 - Only works in collection runner\r",
@@ -169,11 +169,9 @@
 							"    console.log(currentJsonID);\r",
 							"    pm.expect(currentJsonID).to.eql(\"AcceptJob\");  //    //form_854b7\r",
 							"\r",
-							"\r",
-							"\r",
 							"});\r",
 							"\r",
-							" "
+							"  "
 						],
 						"type": "text/javascript"
 					}
@@ -395,7 +393,7 @@
 	],
 	"variable": [
 		{
-			"id": "e3c1a1c7-f9ff-427c-9a83-ab700d50f7d4",
+			"id": "c597a3ca-ba68-4cb2-a5e9-5f17bb7a889b",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
