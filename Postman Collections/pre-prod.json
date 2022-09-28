@@ -112,6 +112,34 @@
 		},
 		{
 			"name": "PP Portal - Workflow",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "39e8c2b4-f25f-4ce9-a5db-2e652aff448f",
+						"exec": [
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
+							"    //console.log(catIDs);\r",
+							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(catIDs);\r",
+							"\r",
+							"    let currentCatID = catIDs.shift();\r",
+							"    console.log(currentCatID);\r",
+							"    pm.expect(currentCatID).to.eql(\"70\");  //    //form_854b7\r",
+							"\r",
+							"\r",
+							"\r",
+							"});\r",
+							"\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "298514d6-d0b0-41a7-b91b-7fbdfd9559d4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -341,7 +369,7 @@
 	],
 	"variable": [
 		{
-			"id": "ab8fa9f4-2877-47dd-a8cf-26b3b7f97960",
+			"id": "28afb983-a930-4bac-88e6-2fd3e7a84ed3",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
