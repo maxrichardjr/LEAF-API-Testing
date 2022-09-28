@@ -290,13 +290,21 @@
 					"script": {
 						"id": "7b2beb1a-4de9-477e-8265-51764d22069c",
 						"exec": [
-							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
+							"//pm.test(\"Contains expected value\", function () {\r",
+							"//    const response = pm.response.json();\r",
+							"//    const jsonIDs = response.map(jsonID => jsonID.categoryID);      //jsonIDs is the array containing IDs\r",
+							"    //console.log(jsonIDs);\r",
+							"//    pm.variables.set('jsonIDs', jsonIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd jsonIDs is the var defined on line 3 - Only works in collection runner\r",
+							"//    console.log(jsonIDs);\r",
 							"\r",
-							"var time = pm.response.responseTime\r",
+							"//    let currentJsonID = jsonIDs.shift();\r",
+							"//    console.log(currentJsonID);\r",
+							"//    pm.expect(currentJsonID).to.eql(\"form_a0c0f\");  //    //form_854b7\r",
 							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+							"//});\r",
+							"\r",
+							"  "
 						],
 						"type": "text/javascript"
 					}
@@ -400,7 +408,7 @@
 	],
 	"variable": [
 		{
-			"id": "8b055ae2-ddd9-4f86-a60a-e6846b0e970b",
+			"id": "2750bf02-bb55-435b-bdca-a37ea745eac1",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
