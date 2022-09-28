@@ -128,7 +128,7 @@
 							"\r",
 							"    let currentCatID = catIDs.shift();\r",
 							"    console.log(currentCatID);\r",
-							"    pm.expect(currentCatID).to.eql(\"70\");  //    //form_854b7\r",
+							"    pm.expect(currentCatID).to.eql(70);  //    //form_854b7\r",
 							"\r",
 							"\r",
 							"\r",
@@ -369,7 +369,7 @@
 	],
 	"variable": [
 		{
-			"id": "28afb983-a930-4bac-88e6-2fd3e7a84ed3",
+			"id": "d9b45005-f0b3-4b67-a1f4-3817466f8c7f",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
