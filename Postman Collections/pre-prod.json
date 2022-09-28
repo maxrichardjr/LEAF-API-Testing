@@ -79,21 +79,21 @@
 						"exec": [
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
-							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
-							"    //console.log(catIDs);\r",
-							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
-							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
-							"    console.log(catIDs);\r",
+							"    const jsonIDs = response.map(jsonID => jsonID.categoryID);      //jsonIDs is the array containing IDs\r",
+							"    //console.log(jsonIDs);\r",
+							"    pm.variables.set('jsonIDs', jsonIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd jsonIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(jsonIDs);\r",
 							"\r",
-							"    let currentCatID = catIDs.shift();\r",
-							"    console.log(currentCatID);\r",
-							"    pm.expect(currentCatID).to.eql(\"form_a0c0f\");  //    //form_854b7\r",
+							"    let currentJsonID = jsonIDs.shift();\r",
+							"    console.log(currentJsonID);\r",
+							"    pm.expect(currentJsonID).to.eql(\"form_a0c0f\");  //    //form_854b7\r",
 							"\r",
 							"\r",
 							"\r",
 							"});\r",
 							"\r",
-							" "
+							"  "
 						],
 						"type": "text/javascript"
 					}
@@ -397,7 +397,7 @@
 	],
 	"variable": [
 		{
-			"id": "9aa8dc7b-2a3c-4865-aa14-a6e6d09899e6",
+			"id": "d86af43e-e5fc-4561-8bde-2fe552f6dc72",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
