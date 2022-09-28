@@ -66,7 +66,7 @@
 					}
 				}
 			],
-			"_postman_id": "986a8997-7cf1-4d7a-9d7c-2bd00c1c3825",
+			"id": "986a8997-7cf1-4d7a-9d7c-2bd00c1c3825",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -117,7 +117,7 @@
 					}
 				}
 			],
-			"_postman_id": "1c550486-e04f-4b4e-97bb-9cc766013a76",
+			"id": "1c550486-e04f-4b4e-97bb-9cc766013a76",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -290,7 +290,7 @@
 					}
 				}
 			],
-			"_postman_id": "9c9d3b92-11d7-4671-9e25-037ac3914e8c",
+			"id": "9c9d3b92-11d7-4671-9e25-037ac3914e8c",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -341,7 +341,7 @@
 					}
 				}
 			],
-			"_postman_id": "06845091-e9f9-4f46-b93f-866ba816d40a",
+			"id": "06845091-e9f9-4f46-b93f-866ba816d40a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -408,7 +408,7 @@
 					}
 				}
 			],
-			"_postman_id": "4a0c8592-8720-4645-998d-aba705284518",
+			"id": "4a0c8592-8720-4645-998d-aba705284518",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -491,7 +491,7 @@
 					}
 				}
 			],
-			"_postman_id": "be905dca-86c3-4d63-8cff-fa8009ecd774",
+			"id": "be905dca-86c3-4d63-8cff-fa8009ecd774",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -535,7 +535,7 @@
 					}
 				}
 			],
-			"_postman_id": "39ef254e-1888-4b5d-9874-7addbb704335",
+			"id": "39ef254e-1888-4b5d-9874-7addbb704335",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -547,10 +547,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{  \r\n    \"formID\": \"form_12307\",\r\n    \"requestData\": \"Test Form\"   \r\n}",
-					"options": {
-						"raw": {}
-					}
+					"raw": "{  \r\n    \"formID\": \"form_12307\",\r\n    \"requestData\": \"Test Form\"   \r\n}"
 				},
 				"url": {
 					"raw": "https://localhost/LEAF_Request_Portal/api/new?formID=_form_12334&requestData=Test Request",
@@ -597,7 +594,7 @@
 					}
 				}
 			],
-			"_postman_id": "a90ee8ef-6f19-412b-ac92-65dd7a425dac",
+			"id": "a90ee8ef-6f19-412b-ac92-65dd7a425dac",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -631,7 +628,7 @@
 					}
 				}
 			],
-			"_postman_id": "aee92a02-ae2f-4035-94f1-37c714f017cc",
+			"id": "aee92a02-ae2f-4035-94f1-37c714f017cc",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -673,7 +670,7 @@
 					}
 				}
 			],
-			"_postman_id": "5dd418f1-2e06-4a6e-88a9-a73a88f28ae1",
+			"id": "5dd418f1-2e06-4a6e-88a9-a73a88f28ae1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"tlsPreferServerCiphers": false,
@@ -690,7 +687,7 @@
 			"response": []
 		},
 		{
-			"name": "Local Portal - Workflow userActions",
+			"name": "Local - Workflow userActions",
 			"event": [
 				{
 					"listen": "test",
@@ -728,7 +725,7 @@
 					}
 				}
 			],
-			"_postman_id": "43e5e695-582a-42af-973b-732bbeb4f970",
+			"id": "43e5e695-582a-42af-973b-732bbeb4f970",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -762,7 +759,7 @@
 					}
 				}
 			],
-			"_postman_id": "cc1d6584-8bf6-40cb-9914-e41675281170",
+			"id": "cc1d6584-8bf6-40cb-9914-e41675281170",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -804,7 +801,7 @@
 					}
 				}
 			],
-			"_postman_id": "06db52cb-3962-473f-b912-6a69c5c949e1",
+			"id": "06db52cb-3962-473f-b912-6a69c5c949e1",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -846,7 +843,7 @@
 					}
 				}
 			],
-			"_postman_id": "ce804bd5-1f42-44dd-a936-f04e19666b30",
+			"id": "ce804bd5-1f42-44dd-a936-f04e19666b30",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -888,7 +885,7 @@
 					}
 				}
 			],
-			"_postman_id": "85e6e87d-d83c-406b-8aca-7848047ba1d2",
+			"id": "85e6e87d-d83c-406b-8aca-7848047ba1d2",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -930,7 +927,7 @@
 					}
 				}
 			],
-			"_postman_id": "a420f61c-e5f0-4f68-9bc7-c44c0c112faf",
+			"id": "a420f61c-e5f0-4f68-9bc7-c44c0c112faf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -972,7 +969,7 @@
 					}
 				}
 			],
-			"_postman_id": "515a6bdd-a2d3-4de9-aa7c-eb38feabc978",
+			"id": "515a6bdd-a2d3-4de9-aa7c-eb38feabc978",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -1026,28 +1023,25 @@
 	],
 	"variable": [
 		{
-			"id": "2364e456-5b29-4e50-af21-4aa0b0009543",
+			"id": "9e91604d-8e4e-4aa5-81a4-841b978d8a68",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "6d92da22-371c-4f5f-8bcc-9094bbdd143f",
+			"id": "6e7409da-4f4d-467b-bed9-dfe443f633c4",
 			"key": "formCategories",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "83a0e29d-1b79-4efb-a785-10ad8c7b2d0e",
+			"id": "dd5731e9-8114-4717-8717-679972cb5cc9",
 			"key": "CategoryID",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "561c0f53-463c-46e8-b482-e5276eec9943",
+			"id": "e7fbc372-f35e-441f-84df-60170c4d007c",
 			"key": "categoryID",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
