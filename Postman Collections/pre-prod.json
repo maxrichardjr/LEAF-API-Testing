@@ -111,7 +111,7 @@
 			"response": []
 		},
 		{
-			"name": "PP Portal - Workflow",
+			"name": "Fix Test 3PP Portal - Workflow",
 			"event": [
 				{
 					"listen": "test",
@@ -369,7 +369,7 @@
 	],
 	"variable": [
 		{
-			"id": "0de3fc09-c2b5-4127-9636-9348337617dd",
+			"id": "16670da5-c3ff-4582-a8a0-150701dd1fe7",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
