@@ -197,13 +197,22 @@
 					"script": {
 						"id": "7b2beb1a-4de9-477e-8265-51764d22069c",
 						"exec": [
-							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"\r",
+							"\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const jsonIDs = response.map(jsonID => jsonID.indicatorID);      //jsonIDs is the array containing IDs\r",
+							"    //console.log(jsonIDs);\r",
+							"    pm.variables.set('jsonIDs', jsonIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd jsonIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(jsonIDs);\r",
+							"\r",
+							"    let currentJsonID = jsonIDs.shift();\r",
+							"    console.log(currentJsonID);\r",
+							"    pm.expect(currentJsonID).to.eql(\"2096\");  \r",
 							"});\r",
 							"\r",
-							"var time = pm.response.responseTime\r",
-							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+							"  "
 						],
 						"type": "text/javascript"
 					}
@@ -391,7 +400,7 @@
 	],
 	"variable": [
 		{
-			"id": "0bc90c90-cf68-4275-9c96-887779d977e8",
+			"id": "14dcaa00-7eba-412c-84f3-456572dbd6c0",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
