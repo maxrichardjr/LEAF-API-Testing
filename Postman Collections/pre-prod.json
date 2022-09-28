@@ -7,7 +7,7 @@
 	"item": [
 		{
 			"name": "PP Portal - Base URL",
-			"_postman_id": "25acef8d-a0ec-4986-aa8f-9cc9291b5613",
+			"id": "25acef8d-a0ec-4986-aa8f-9cc9291b5613",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -23,7 +23,7 @@
 		},
 		{
 			"name": "PP Portal - Form Trial & Error",
-			"_postman_id": "f3557a1a-a33f-471f-b770-eba9e56a312d",
+			"id": "f3557a1a-a33f-471f-b770-eba9e56a312d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -47,7 +47,7 @@
 		},
 		{
 			"name": "X PP Portal - Form Get Specific Form",
-			"_postman_id": "f0e4b040-f1eb-4600-a7c5-2a8ba960dd28",
+			"id": "f0e4b040-f1eb-4600-a7c5-2a8ba960dd28",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
 				"disabledSystemHeaders": {}
@@ -71,7 +71,7 @@
 		},
 		{
 			"name": "PP Portal - Form Categories",
-			"_postman_id": "07a54ba3-1c1a-4e2b-bc59-36e549f16ebf",
+			"id": "07a54ba3-1c1a-4e2b-bc59-36e549f16ebf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -84,7 +84,7 @@
 		},
 		{
 			"name": "PP Portal - Workflow",
-			"_postman_id": "298514d6-d0b0-41a7-b91b-7fbdfd9559d4",
+			"id": "298514d6-d0b0-41a7-b91b-7fbdfd9559d4",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -97,7 +97,7 @@
 		},
 		{
 			"name": "PP Portal - Workflow userActions",
-			"_postman_id": "01143b96-e4aa-456f-867d-2df3f188c5bf",
+			"id": "01143b96-e4aa-456f-867d-2df3f188c5bf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -108,6 +108,174 @@
 				"method": "GET",
 				"header": [],
 				"url": "https://leaf-preprod.va.gov/Academy/Demo1/api/workflow/userActions"
+			},
+			"response": []
+		},
+		{
+			"name": "PP - Form Get Specific Form - Flat Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b2beb1a-4de9-477e-8265-51764d22069c",
+						"exec": [
+							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "0b83699d-aa83-4934-934e-365da140035f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "CSRFToken",
+						"value": "{{CSRFToken}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "https://localhost/LEAF_Request_Portal/api/form/_form_00882/flat"
+			},
+			"response": []
+		},
+		{
+			"name": "Local - Form Get Specific Form - Export Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b2beb1a-4de9-477e-8265-51764d22069c",
+						"exec": [
+							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "73ea360c-96c8-496c-99a9-26bf75aaf0a3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "CSRFToken",
+						"value": "{{CSRFToken}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "https://localhost/LEAF_Request_Portal/api/form/_form_00882/export"
+			},
+			"response": []
+		},
+		{
+			"name": "Local - Form Get Specific Form - Workflow Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b2beb1a-4de9-477e-8265-51764d22069c",
+						"exec": [
+							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "c8496bc5-4918-44d1-9c45-03f5a5770f1e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "CSRFToken",
+						"value": "{{CSRFToken}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "https://localhost/LEAF_Request_Portal/api/form/_form_00882/workflow"
+			},
+			"response": []
+		},
+		{
+			"name": "Local - Form Get Specific Form Record - RecordInfo Copy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7b2beb1a-4de9-477e-8265-51764d22069c",
+						"exec": [
+							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "a24d3c29-c114-4454-8770-9c7139dc351d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "CSRFToken",
+						"value": "{{CSRFToken}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": "https://localhost/LEAF_Request_Portal/api/form/50/recordinfo"
 			},
 			"response": []
 		}
@@ -148,7 +316,7 @@
 	],
 	"variable": [
 		{
-			"id": "59e3c4fe-55bd-4fbc-8e30-27eb446ad43b",
+			"id": "6d122923-92c2-4e23-bf6e-02ac95bb23be",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
