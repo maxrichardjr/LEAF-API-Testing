@@ -71,6 +71,34 @@
 		},
 		{
 			"name": "PP Portal - Form Categories",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f1e2e9ba-99d9-445d-810d-1c288935aa2c",
+						"exec": [
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
+							"    //console.log(catIDs);\r",
+							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(catIDs);\r",
+							"\r",
+							"    let currentCatID = catIDs.shift();\r",
+							"    console.log(currentCatID);\r",
+							"    pm.expect(currentCatID).to.eql(\"form_a0c0f\");  //    //form_854b7\r",
+							"\r",
+							"\r",
+							"\r",
+							"});\r",
+							"\r",
+							" "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "07a54ba3-1c1a-4e2b-bc59-36e549f16ebf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -313,7 +341,7 @@
 	],
 	"variable": [
 		{
-			"id": "20d5806e-b6f0-4954-9409-a13f859589ac",
+			"id": "d76b2194-9f22-4a10-832d-42e51b4b9a2a",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
