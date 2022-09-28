@@ -153,6 +153,36 @@
 		},
 		{
 			"name": "PP Portal - Workflow userActions",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d7e4bdfd-10c9-44f7-9de3-1e6dee67b99f",
+						"exec": [
+							"\r",
+							"\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const catIDs = response.map(catID => catID.actionType);         //catIDs is the array containing IDs\r",
+							"    //console.log(catIDs);\r",
+							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(catIDs);\r",
+							"\r",
+							"    let currentCatID = catIDs.shift();\r",
+							"    console.log(currentCatID);\r",
+							"    pm.expect(currentCatID).to.eql(\"AcceptJob\");  //    //form_854b7\r",
+							"\r",
+							"\r",
+							"\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "01143b96-e4aa-456f-867d-2df3f188c5bf",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -369,7 +399,7 @@
 	],
 	"variable": [
 		{
-			"id": "522bcfda-e1cb-490c-9d61-5318d6246296",
+			"id": "d963a731-5836-4124-b47d-452f676adaa1",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
