@@ -167,7 +167,7 @@
 							"\r",
 							"    let currentJsonID = jsonIDs.shift();\r",
 							"    console.log(currentJsonID);\r",
-							"    pm.expect(currentJsonID).to.eql(AcceptJob);  //    //form_854b7\r",
+							"    pm.expect(currentJsonID).to.eql(\"AcceptJob\");  //    //form_854b7\r",
 							"\r",
 							"\r",
 							"\r",
@@ -395,7 +395,7 @@
 	],
 	"variable": [
 		{
-			"id": "39c92311-bc06-40d0-a717-98004793a62f",
+			"id": "e3c1a1c7-f9ff-427c-9a83-ab700d50f7d4",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
