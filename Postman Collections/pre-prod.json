@@ -120,7 +120,7 @@
 						"exec": [
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
-							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
+							"    const catIDs = response.map(catID => catID.workflowID);         //catIDs is the array containing IDs\r",
 							"    //console.log(catIDs);\r",
 							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
 							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
@@ -399,7 +399,7 @@
 	],
 	"variable": [
 		{
-			"id": "d963a731-5836-4124-b47d-452f676adaa1",
+			"id": "f55df142-11d8-4015-b77e-0c1a5e06847f",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
