@@ -89,8 +89,6 @@
 							"    console.log(currentJsonID);\r",
 							"    pm.expect(currentJsonID).to.eql(\"form_a0c0f\");  //    //form_854b7\r",
 							"\r",
-							"\r",
-							"\r",
 							"});\r",
 							"\r",
 							"  "
@@ -393,7 +391,7 @@
 	],
 	"variable": [
 		{
-			"id": "c597a3ca-ba68-4cb2-a5e9-5f17bb7a889b",
+			"id": "0bc90c90-cf68-4275-9c96-887779d977e8",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
