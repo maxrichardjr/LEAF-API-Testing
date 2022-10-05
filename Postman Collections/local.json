@@ -385,8 +385,7 @@
 							"\r",
 							"    let currentCatID = catIDs.shift();\r",
 							"    console.log(currentCatID);\r",
-							"    pm.expect(currentCatID).to.eql(\"form_d203e\");  //    //form_854b7\r",
-							"\r",
+							"    pm.expect(currentCatID).to.eql(\"form_d203e\");  //    //form_d203e\r",
 							"\r",
 							"\r",
 							"});\r",
@@ -1091,23 +1090,23 @@
 	],
 	"variable": [
 		{
-			"id": "1c7e19e6-e307-4e85-953e-f2c464cbd8bb",
+			"id": "f3a76d48-804b-4916-af33-cc7a9cd8b465",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "be548f51-c556-4547-88d6-e458ba0c6ee7",
+			"id": "ae6fc577-f2c8-4652-8854-fe9c3b417ee4",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "13be5de8-d5b9-47c3-afb4-6b51c809d234",
+			"id": "d66baba0-e858-44c0-953f-7d2b3dffea72",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "3901acaf-c239-4b53-bb8a-623edc482a4d",
+			"id": "1a8a705e-6ed3-4308-8b62-5755039b6e7f",
 			"key": "categoryID",
 			"value": ""
 		}
