@@ -794,7 +794,7 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"var time = pm.response.responseTime\r",
+							"var time = pm.response.responseTime;\r",
 							"\r",
 							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));"
 						],
@@ -1090,23 +1090,23 @@
 	],
 	"variable": [
 		{
-			"id": "7c9ba7f4-ea80-4b90-a9fa-a65ff37bdcd7",
+			"id": "af11400f-26bd-4953-8112-f6c8dc8d741f",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c293ab9d-5cd9-470e-958b-ebcdeaee97cb",
+			"id": "318bdf4c-7c1a-4a0a-a118-691f97dfbdd0",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "5fb92dbf-ae7e-48fa-b6f4-ef13262b40ce",
+			"id": "0d650747-d21b-404d-92b2-7a1e49b2590c",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "af9a9174-4f7d-45b2-8f16-722de617899b",
+			"id": "39eebdf0-db0a-4316-baef-764788d5d6e3",
 			"key": "categoryID",
 			"value": ""
 		}
