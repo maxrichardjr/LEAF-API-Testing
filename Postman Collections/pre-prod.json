@@ -152,8 +152,8 @@
 						"id": "16791558-61f5-4372-966a-20efc18141e8",
 						"exec": [
 							"//For POST request\r",
-							"const catIDs = pm.variables.get('catIDs');\r",
-							"pm.variables.set('currentCatID', catIDs.shift());    //get first element/Id in array and return it. Can put in _\r",
+							"//const catIDs = pm.variables.get('catIDs');\r",
+							"//pm.variables.set('currentCatID', catIDs.shift());    //get first element/Id in array and return it. Can put in _\r",
 							"                                                     //array or modify original array (catIDs)\r",
 							"        //Then set as a Global ID in Body\r",
 							"\r",
@@ -930,7 +930,7 @@
 	],
 	"variable": [
 		{
-			"id": "08bf3ab4-4844-4511-870e-24a00fb44140",
+			"id": "cebabc22-badc-4257-af70-41535e659550",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
