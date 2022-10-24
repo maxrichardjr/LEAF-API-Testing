@@ -198,6 +198,14 @@
 					"script": {
 						"id": "39e8c2b4-f25f-4ce9-a5db-2e652aff448f",
 						"exec": [
+							"pm.test(\"Form-getAPI-URL.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime;\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
+							"\r",
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
 							"    const jsonIDs = response.map(jsonID => jsonID.workflowID);      //jsonIDs is the array containing IDs\r",
@@ -501,7 +509,7 @@
 	],
 	"variable": [
 		{
-			"id": "16fb9de0-1242-4dce-92af-342fbe2432c3",
+			"id": "e470736d-cd12-403e-9845-9bacbd804ec0",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
