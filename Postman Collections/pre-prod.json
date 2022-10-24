@@ -23,6 +23,23 @@
 		},
 		{
 			"name": "X PP Portal - Form Get Specific Form",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8f30972a-6ff0-4e18-8f75-a2c07e40378a",
+						"exec": [
+							"pm.test(\"form/workflow - Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "f0e4b040-f1eb-4600-a7c5-2a8ba960dd28",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
@@ -424,7 +441,7 @@
 	],
 	"variable": [
 		{
-			"id": "24a045b4-9070-43f0-a4a8-530a9a991f09",
+			"id": "44376c50-0ffb-4124-a627-d95308960b3e",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
