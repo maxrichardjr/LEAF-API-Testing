@@ -416,7 +416,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1c310f3e-ace5-407a-a31d-1ad0a1cfec18",
+				"id": "596dc701-8eda-426c-a874-6e54e8778c40",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -426,22 +426,17 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1e76bb7d-4f62-4181-963a-690a673f2b14",
+				"id": "289da744-98a8-47c4-b195-9bf821f89a5d",
 				"type": "text/javascript",
 				"exec": [
-					"pm.test(\"form/workflow - Status = 200\", function () {",
-					"    pm.response.to.have.status(200);",
-					"});",
-					"",
-					"var time = pm.response.responseTime",
-					"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+					""
 				]
 			}
 		}
 	],
 	"variable": [
 		{
-			"id": "44376c50-0ffb-4124-a627-d95308960b3e",
+			"id": "566daee5-a8bc-4635-b8ca-20f2937482ad",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
