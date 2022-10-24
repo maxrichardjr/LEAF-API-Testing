@@ -245,6 +245,16 @@
 					"script": {
 						"id": "d7e4bdfd-10c9-44f7-9de3-1e6dee67b99f",
 						"exec": [
+							"\r",
+							"pm.test(\"Form-getAPI-URL.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime;\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
+							"\r",
+							"\r",
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
 							"    const jsonIDs = response.map(jsonID => jsonID.actionType);      //jsonIDs is the array containing IDs\r",
@@ -509,7 +519,7 @@
 	],
 	"variable": [
 		{
-			"id": "dd7ecc0e-3bef-4301-96f3-3b629329dc75",
+			"id": "2bd1d8fc-a6c7-4ab5-bafb-3e644672abad",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
