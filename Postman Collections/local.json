@@ -159,6 +159,14 @@
 					"script": {
 						"id": "9ec3efbf-24ef-416a-9a5a-593f62d6cce7",
 						"exec": [
+							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime;\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
+							"\r",
+							"\r",
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
 							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
@@ -1091,23 +1099,23 @@
 	],
 	"variable": [
 		{
-			"id": "129056a8-8dd7-4972-a4fc-6193334ca562",
+			"id": "b8d9e98e-56e1-42d4-b7c1-3acd83139bb9",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "a6396927-4659-4ff8-b175-b2f044d2a3ad",
+			"id": "67046e3e-e13a-49be-9151-3214b6c6e02b",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "825f6a0c-ca3a-4a8a-9970-439ade533bce",
+			"id": "231b642b-4e98-42b1-a879-f525e7b6f783",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "ea57006f-34da-4746-93f5-ffb9370ade55",
+			"id": "2ab268a3-bbfa-449e-b051-5a34b122a203",
 			"key": "categoryID",
 			"value": ""
 		}
