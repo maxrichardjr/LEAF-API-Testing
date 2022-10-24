@@ -64,6 +64,23 @@
 		},
 		{
 			"name": "PP Portal - Form Trial & Error",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e624e4f8-8190-4965-997b-46a9e7d95089",
+						"exec": [
+							"pm.test(\"form/workflow - Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "f3557a1a-a33f-471f-b770-eba9e56a312d",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true,
@@ -436,7 +453,7 @@
 	],
 	"variable": [
 		{
-			"id": "566daee5-a8bc-4635-b8ca-20f2937482ad",
+			"id": "6a559042-ac0a-4656-bb6c-df6e7e0e172a",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
