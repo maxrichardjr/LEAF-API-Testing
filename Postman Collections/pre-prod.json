@@ -633,7 +633,7 @@
 							"//    const response = pm.response.json();\r",
 							"//    const jsonIDs = response.map(jsonID => jsonID.2096);      //jsonIDs is the array containing IDs\r",
 							"//    //console.log(jsonIDs);\r",
-							"    pm.variables.set('jsonIDs', jsonIDs); //Creates a variable or updates an existing one.\r",
+							"//    pm.variables.set('jsonIDs', jsonIDs); //Creates a variable or updates an existing one.\r",
 							"                                        //2nd jsonIDs is the var defined on line 3 - Only works in collection runner\r",
 							"//    console.log(jsonIDs);\r",
 							"\r",
@@ -930,7 +930,7 @@
 	],
 	"variable": [
 		{
-			"id": "d4e1890e-741d-4e22-9477-a01fdb82b601",
+			"id": "08bf3ab4-4844-4511-870e-24a00fb44140",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
