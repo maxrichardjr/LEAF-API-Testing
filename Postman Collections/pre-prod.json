@@ -411,7 +411,7 @@
 			"response": []
 		},
 		{
-			"name": "Local - FIX Create Form Copy",
+			"name": "Local - FIX Create Form",
 			"event": [
 				{
 					"listen": "test",
@@ -1055,7 +1055,7 @@
 	],
 	"variable": [
 		{
-			"id": "2ed57dec-a2e7-484e-9cb8-d6e497d01fec",
+			"id": "72cae06f-2c38-4d5b-9783-126e12593c8c",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
