@@ -418,12 +418,16 @@
 							"\r",
 							"var time = pm.response.responseTime\r",
 							"\r",
-							"//    Video 2:16\r",
+							"\r",
 							"\r",
 							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
 							"\r",
+							"\r",
+							"//    Video 2:16\r",
+							"\r",
+							"\r",
 							"const response = pm.response.json();\r",
-							"const catIDs = response.map();       //create array w only this id\r",
+							"const catIDs = response.map(tool => tool.categoryID);       //goes through each element of the array\r",
 							"\r",
 							"\r",
 							""
@@ -1133,23 +1137,23 @@
 	],
 	"variable": [
 		{
-			"id": "0fdea081-ca3c-4641-aca1-9957ab6ce574",
+			"id": "eb6fd853-4b67-451c-96de-7eb2d16c654f",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "a7975b68-9d6b-4db0-a616-c7e270e26df2",
+			"id": "098a5768-46f2-4353-ad1f-db9d264dc016",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "0c376603-dbd7-495a-a505-288f1e97fd43",
+			"id": "91e6c645-9443-4958-85a7-54f306adde2a",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "7da89d66-d54e-4448-a7f7-2ba21e835f84",
+			"id": "acdc4d23-5b8a-4801-8bdd-1d3a33c82453",
 			"key": "categoryID",
 			"value": ""
 		}
