@@ -550,6 +550,25 @@
 						],
 						"type": "text/javascript"
 					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "02afb776-3936-41a4-9cb9-9988b461c7f7",
+						"exec": [
+							"const response = pm.response.json();\r",
+							"const catIDs = map.   //create arrau w only this id\r",
+							"\r",
+							"\r",
+							"const random = Math.random().toString(36).substring(2);\r",
+							"\r",
+							"const formCategories = \"formCategories \" + random;\r",
+							"pm.collectionVariables.set(\"formCategories\", formCategories);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
 				}
 			],
 			"id": "39ef254e-1888-4b5d-9874-7addbb704335",
@@ -1098,23 +1117,23 @@
 	],
 	"variable": [
 		{
-			"id": "566fbf9a-471c-447f-a05f-a09a5adc931f",
+			"id": "3e648c76-dabd-49d3-9eb8-0865a2f86675",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "fde58b24-fa9e-444b-a452-ad440bf51bcc",
+			"id": "eb06b4d1-f88b-48c1-8ad7-e169c292e725",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "9f2326dd-d42a-48be-b2e6-f7127055cb55",
+			"id": "02456687-4acf-4fd2-b4a8-46877af79edf",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "32e5b953-ae63-4c7f-ac37-db42b1df8422",
+			"id": "eee84d2c-3cf1-4622-b7df-7115206a88a3",
 			"key": "categoryID",
 			"value": ""
 		}
