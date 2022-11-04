@@ -423,12 +423,12 @@
 							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
 							"\r",
 							"\r",
-							"//    Video 2:16\r",
 							"\r",
 							"\r",
 							"const response = pm.response.json();\r",
 							"const catIDs = response.map(tool => tool.categoryID);       //goes through each element of the array\r",
 							"\r",
+							"//    Pickup Video 2:16\r",
 							"\r",
 							""
 						],
@@ -1137,23 +1137,23 @@
 	],
 	"variable": [
 		{
-			"id": "eb6fd853-4b67-451c-96de-7eb2d16c654f",
+			"id": "f71222ff-ad03-4454-9603-615a6655547c",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "098a5768-46f2-4353-ad1f-db9d264dc016",
+			"id": "3477fa0d-0272-4d41-9d10-0a6f557ee268",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "91e6c645-9443-4958-85a7-54f306adde2a",
+			"id": "f1960d24-3264-41f1-8226-9394a3d15ef2",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "acdc4d23-5b8a-4801-8bdd-1d3a33c82453",
+			"id": "bb6528f5-5a58-45cc-b3d6-0873cb4e53f6",
 			"key": "categoryID",
 			"value": ""
 		}
