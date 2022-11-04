@@ -330,42 +330,6 @@
 			"response": []
 		},
 		{
-			"name": "Local - Forms",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "f211c6f6-517d-47d4-9606-9a5eb5cdbb2e",
-						"exec": [
-							"pm.test(\"Form-getAPI-URL.  Status = 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"var time = pm.response.responseTime\r",
-							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "06845091-e9f9-4f46-b93f-866ba816d40a",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "GET",
-				"header": [],
-				"url": "https://localhost/LEAF_Request_Portal/api/form"
-			},
-			"response": []
-		},
-		{
 			"name": "Local - Form Categories",
 			"event": [
 				{
@@ -437,6 +401,123 @@
 					}
 				},
 				"url": "https://localhost/LEAF_Request_Portal/api/form/categories"
+			},
+			"response": []
+		},
+		{
+			"name": "Local - Forms",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f211c6f6-517d-47d4-9606-9a5eb5cdbb2e",
+						"exec": [
+							"pm.test(\"Form-getAPI-URL.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"\r",
+							"//    Video 2:16\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
+							"\r",
+							"const response = pm.response.json();\r",
+							"const catIDs = response.map();       //create array w only this id\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0a7d7a0c-33c5-46d2-8088-4a366dbee5b3",
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "06845091-e9f9-4f46-b93f-866ba816d40a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost/LEAF_Request_Portal/api/form/categories"
+			},
+			"response": []
+		},
+		{
+			"name": "Local - FIX Create Form",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "6a42058c-84fc-404d-9763-78ea248bcb4b",
+						"exec": [
+							"//For POST request\r",
+							"//console.log(catIDs);\r",
+							"//Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
+							"\r",
+							"  \r",
+							"//const catIDs = pm.variables.get('catIDs');\r",
+							"//console.log('Pre-request from POST request ' + catIDs);\r",
+							"////pm.variables.set('currentCatID', catIDs.shift());    //get first element/Id in array and return it. Can put in _\r",
+							"//pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)\r",
+							"//\r",
+							"//if(Array.isArray(catIDs) && catIDs.length > 0) {\r",
+							"//    postman.setNextRequest('POST Category');       //Where to go next, input next request name          VID: 7:08\r",
+							"//    console.log('POST CATEGORY');                                    //Can also use in Test section\r",
+							"//} else {\r",
+							"//    postman.setNextRequest(null);\r",
+							"//}"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "02afb776-3936-41a4-9cb9-9988b461c7f7",
+						"exec": [
+							"const response = pm.response.json();\r",
+							"const catIDs = map.   //create arrau w only this id\r",
+							"\r",
+							"\r",
+							"const random = Math.random().toString(36).substring(2);\r",
+							"\r",
+							"const formCategories = \"formCategories \" + random;\r",
+							"pm.collectionVariables.set(\"formCategories\", formCategories);\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "39ef254e-1888-4b5d-9874-7addbb704335",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"categoryName\": \"TestForm\",\r\n     \"categoryDescription\": \"Postman categoryDescription\"\r\n}"
+				},
+				"url": "https://localhost/LEAF_Request_Portal/api/form/new"
 			},
 			"response": []
 		},
@@ -520,69 +601,6 @@
 					}
 				},
 				"url": "https://localhost/LEAF_Request_Portal/api/form/categories"
-			},
-			"response": []
-		},
-		{
-			"name": "Local - FIX Create Form",
-			"event": [
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "6a42058c-84fc-404d-9763-78ea248bcb4b",
-						"exec": [
-							"//For POST request\r",
-							"//console.log(catIDs);\r",
-							"//Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
-							"\r",
-							"  \r",
-							"//const catIDs = pm.variables.get('catIDs');\r",
-							"//console.log('Pre-request from POST request ' + catIDs);\r",
-							"////pm.variables.set('currentCatID', catIDs.shift());    //get first element/Id in array and return it. Can put in _\r",
-							"//pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)\r",
-							"//\r",
-							"//if(Array.isArray(catIDs) && catIDs.length > 0) {\r",
-							"//    postman.setNextRequest('POST Category');       //Where to go next, input next request name          VID: 7:08\r",
-							"//    console.log('POST CATEGORY');                                    //Can also use in Test section\r",
-							"//} else {\r",
-							"//    postman.setNextRequest(null);\r",
-							"//}"
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "test",
-					"script": {
-						"id": "02afb776-3936-41a4-9cb9-9988b461c7f7",
-						"exec": [
-							"const response = pm.response.json();\r",
-							"const catIDs = map.   //create arrau w only this id\r",
-							"\r",
-							"\r",
-							"const random = Math.random().toString(36).substring(2);\r",
-							"\r",
-							"const formCategories = \"formCategories \" + random;\r",
-							"pm.collectionVariables.set(\"formCategories\", formCategories);\r",
-							"\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "39ef254e-1888-4b5d-9874-7addbb704335",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n     \"categoryName\": \"TestForm\",\r\n     \"categoryDescription\": \"Postman categoryDescription\"\r\n}"
-				},
-				"url": "https://localhost/LEAF_Request_Portal/api/form/new"
 			},
 			"response": []
 		},
@@ -1117,23 +1135,23 @@
 	],
 	"variable": [
 		{
-			"id": "3e648c76-dabd-49d3-9eb8-0865a2f86675",
+			"id": "f6f78e24-85d4-427d-b026-3ffe5e973a19",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "eb06b4d1-f88b-48c1-8ad7-e169c292e725",
+			"id": "ec555cc5-fe34-4453-ae0a-9f5c3bc48c3e",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "02456687-4acf-4fd2-b4a8-46877af79edf",
+			"id": "ab758e7e-b4f1-443b-8631-cdf0f8d794cf",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "eee84d2c-3cf1-4622-b7df-7115206a88a3",
+			"id": "2a2fe524-b20f-48d2-8418-d27a04a98a3d",
 			"key": "categoryID",
 			"value": ""
 		}
