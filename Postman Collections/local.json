@@ -423,18 +423,22 @@
 							"\r",
 							"\r",
 							"\r",
-							"const response = pm.response.json();\r",
-							"const catIDs = response.map(tool => tool.categoryID);       //goes through each element of the array\r",
+							"//const response = pm.response.json();\r",
+							"//const catIDs = response.map(tool => tool.categoryID);       //goes through each element of the array\r",
 							"\r",
 							"pm.test(\"Contains expected value\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    console.log(jsonData.response);   \r",
-							"    pm.expect(jsonData.categoryID).to.eql(\"form_b7c34\");  //iterate through\r",
+							"    const response = pm.response.json();\r",
+							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
+							"    //console.log(catIDs);\r",
+							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(catIDs);  //\r",
+							"\r",
+							"    let currentCatID = catIDs.shift();\r",
+							"    console.log(currentCatID);\r",
+							"    pm.expect(currentCatID).to.eql(\"form_b7c34\");  //    //form_d203e\r",
 							"});\r",
 							"\r",
-							"\r",
-							"\r",
-							"//    Pickup Video 2:16\r",
 							"\r",
 							""
 						],
@@ -1141,23 +1145,23 @@
 	],
 	"variable": [
 		{
-			"id": "d15ff0b9-3a93-446a-b655-d450f29d464c",
+			"id": "13a4b30c-7426-4de4-8b60-678fc3e8123d",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "4d683541-7e90-4921-8394-b90624242719",
+			"id": "ec00825f-dc5e-458e-8426-389dba6a976f",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "4ac79a16-4c94-4292-a330-d7eebc741a9f",
+			"id": "f8919867-72e1-44c0-be69-6036cb527769",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "234f54d9-453d-449d-b99c-7bf7f2e17023",
+			"id": "5aebb8e5-4140-432e-814e-a5962047f3ba",
 			"key": "categoryID",
 			"value": ""
 		}
