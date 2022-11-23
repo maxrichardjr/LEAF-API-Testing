@@ -487,22 +487,18 @@
 					"script": {
 						"id": "0fc167b9-bc0d-418f-9538-f3c0c537db90",
 						"exec": [
-							"//For POST request\r",
-							"//console.log(catIDs);\r",
-							"//Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
+							"const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
+							"console.log('Pre-request from POST request ' + catIDs);\r",
+							"//catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
+							"    \r",
+							"pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
 							"\r",
-							"  \r",
-							"//const catIDs = pm.variables.get('catIDs');\r",
-							"//console.log('Pre-request from POST request ' + catIDs);\r",
-							"////pm.variables.set('currentCatID', catIDs.shift());    //get first element/Id in array and return it. Can put in _\r",
-							"//pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)\r",
-							"//\r",
-							"//if(Array.isArray(catIDs) && catIDs.length > 0) {\r",
-							"//    postman.setNextRequest('POST Category');       //Where to go next, input next request name          VID: 7:08\r",
-							"//    console.log('POST CATEGORY');                                    //Can also use in Test section\r",
-							"//} else {\r",
-							"//    postman.setNextRequest(null);\r",
-							"//}"
+							"// if(Array.isArray(catIDs) && catIDs.length > 0) {   //array item must have length > 0  (a valid Cat ID)\r",
+							"//     postman.setNextRequest('POST Category');       //iterate through all members of array   USE Test Name       VID: 7:08 - 9:16\r",
+							"//     console.log('POST CATEGORY');                  //Can also use in Test section\r",
+							"// } else {\r",
+							"//     postman.setNextRequest(null);\r",
+							"// }"
 						],
 						"type": "text/javascript"
 					}
@@ -1139,23 +1135,23 @@
 	],
 	"variable": [
 		{
-			"id": "1ce0edb3-9ef2-4c4b-91e0-58a05f66ad02",
+			"id": "1e795151-ee67-4ab2-9482-1f92eb2ed60d",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "16ed1740-eb65-4389-9ac6-bc999ed86a4a",
+			"id": "195dda0d-f980-4607-a4ae-a800ea674b55",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "bee1d8cf-2abd-4baa-831e-86125ca15352",
+			"id": "8bc2955a-30d1-41b3-8d05-ce03f33e50fc",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "70d1ae4f-ecc7-47e5-bde4-188b7edc3faf",
+			"id": "5276fdc4-c23d-4443-8c21-9a6f0146099d",
 			"key": "categoryID",
 			"value": ""
 		}
