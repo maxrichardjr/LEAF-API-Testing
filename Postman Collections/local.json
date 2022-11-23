@@ -422,10 +422,10 @@
 						"exec": [
 							"\r",
 							"\r",
-							"const random = Math.random().toString(36).substring(2);\r",
+							"// CONST RANDOM = MATH.RANDOM().TOSTRING(36).SUBSTRING(2);\r",
 							"\r",
-							"const formCategories = \"formCategories \" + random;\r",
-							"pm.collectionVariables.set(\"formCategories\", formCategories);\r",
+							"// CONST FORMCATEGORIES = \"FORMCATEGORIES \" + RANDOM;\r",
+							"// PM.COLLECTIONVARIABLES.SET(\"FORMCATEGORIES\", FORMCATEGORIES);\r",
 							"\r",
 							""
 						],
@@ -1085,23 +1085,23 @@
 	],
 	"variable": [
 		{
-			"id": "d17087af-cdeb-480a-8cec-823b391720c9",
+			"id": "404a1a46-1121-45c4-873f-6fcac947ca44",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c5ae189a-61af-426c-914f-049395c63aec",
+			"id": "91361988-3f6d-4a23-b12c-fa803d4be024",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "9f8204d0-737e-44d9-a3fa-dd03e4841c8f",
+			"id": "a8e06bd8-7f21-4bfc-9fb7-9b8eb32c9051",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "665ac17c-d57d-4a85-a3ca-db11764f7ee8",
+			"id": "4eaa0ff8-ecec-44ef-ac7b-c95466513e49",
 			"key": "categoryID",
 			"value": ""
 		}
