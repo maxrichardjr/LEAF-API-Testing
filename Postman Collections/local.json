@@ -353,7 +353,7 @@
 							"    //console.log(catIDs);\r",
 							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
 							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
-							"    console.log(catIDs);\r",
+							"    console.log(catIDs);  //\r",
 							"\r",
 							"    let currentCatID = catIDs.shift();\r",
 							"    console.log(currentCatID);\r",
@@ -1139,23 +1139,23 @@
 	],
 	"variable": [
 		{
-			"id": "a5a0350c-6906-442c-ba9c-e3031ea63d6c",
+			"id": "1ce0edb3-9ef2-4c4b-91e0-58a05f66ad02",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "11cdd4eb-8cbb-4dc4-8f16-68fcc328255b",
+			"id": "16ed1740-eb65-4389-9ac6-bc999ed86a4a",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "af8bd5d9-42ec-4209-8931-7f99083c118f",
+			"id": "bee1d8cf-2abd-4baa-831e-86125ca15352",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "7207d651-f631-4bbb-b96a-b5d6123e3b14",
+			"id": "70d1ae4f-ecc7-47e5-bde4-188b7edc3faf",
 			"key": "categoryID",
 			"value": ""
 		}
