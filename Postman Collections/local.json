@@ -424,12 +424,12 @@
 							"\r",
 							"\r",
 							"//const response = pm.response.json();\r",
-							"//const catIDs = response.map(tool => tool.categoryID);       //goes through each element of the array\r",
+							"//const catIDs = response.map(tool => tool.categoryID);       \r",
 							"\r",
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
-							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
-							"    //console.log(catIDs);\r",
+							"    const catIDs = response.map(catID => catID.categoryID);    //catIDs is array containing IDs  goes through each element of the array\r",
+							"    console.log(catIDs);\r",
 							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
 							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
 							"    console.log(catIDs);  //\r",
@@ -1145,23 +1145,23 @@
 	],
 	"variable": [
 		{
-			"id": "13a4b30c-7426-4de4-8b60-678fc3e8123d",
+			"id": "380edade-be87-4d3c-a920-1e50ff360b03",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "ec00825f-dc5e-458e-8426-389dba6a976f",
+			"id": "062526b1-4ec0-4e36-86d8-d2b4666b9ebd",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "f8919867-72e1-44c0-be69-6036cb527769",
+			"id": "804f2bad-ab07-404b-a147-0a541b476224",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "5aebb8e5-4140-432e-814e-a5962047f3ba",
+			"id": "6ac45d11-88fb-4016-9bcf-ca4d9b5e47df",
 			"key": "categoryID",
 			"value": ""
 		}
