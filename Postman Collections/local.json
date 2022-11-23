@@ -418,8 +418,6 @@
 							"\r",
 							"var time = pm.response.responseTime\r",
 							"\r",
-							"\r",
-							"\r",
 							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
 							"\r",
 							"\r",
@@ -427,6 +425,14 @@
 							"\r",
 							"const response = pm.response.json();\r",
 							"const catIDs = response.map(tool => tool.categoryID);       //goes through each element of the array\r",
+							"\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    console.log(jsonData.response);   \r",
+							"    pm.expect(jsonData.categoryID).to.eql(\"form_b7c34\");  //iterate through\r",
+							"});\r",
+							"\r",
+							"\r",
 							"\r",
 							"//    Pickup Video 2:16\r",
 							"\r",
@@ -1135,23 +1141,23 @@
 	],
 	"variable": [
 		{
-			"id": "1e795151-ee67-4ab2-9482-1f92eb2ed60d",
+			"id": "d15ff0b9-3a93-446a-b655-d450f29d464c",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "195dda0d-f980-4607-a4ae-a800ea674b55",
+			"id": "4d683541-7e90-4921-8394-b90624242719",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "8bc2955a-30d1-41b3-8d05-ce03f33e50fc",
+			"id": "4ac79a16-4c94-4292-a330-d7eebc741a9f",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "5276fdc4-c23d-4443-8c21-9a6f0146099d",
+			"id": "234f54d9-453d-449d-b99c-7bf7f2e17023",
 			"key": "categoryID",
 			"value": ""
 		}
