@@ -98,60 +98,6 @@
 			"response": []
 		},
 		{
-			"name": "Local - Base URL",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "d2470e0d-a4b9-463d-bbf0-4f9394d3988e",
-						"exec": [
-							"pm.test(\"Base URL.  Status = 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"var time = pm.response.responseTime\r",
-							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "1c550486-e04f-4b4e-97bb-9cc766013a76",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "https://localhost/LEAF_Request_Portal/index.php?a=printview&recordID=498",
-					"protocol": "https",
-					"host": [
-						"localhost"
-					],
-					"path": [
-						"LEAF_Request_Portal",
-						"index.php"
-					],
-					"query": [
-						{
-							"key": "a",
-							"value": "printview"
-						},
-						{
-							"key": "recordID",
-							"value": "498"
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "Local - Form Trial & Error (Currently Categories)",
 			"event": [
 				{
@@ -1140,23 +1086,23 @@
 	],
 	"variable": [
 		{
-			"id": "8ce19282-9a2a-49e3-8f7d-aaa9e79e9b55",
+			"id": "5a0b4a9d-4d0a-44d7-b85b-04660afc8d59",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "30e9c924-f665-44d0-b415-a4588a844a53",
+			"id": "19d1d66d-3c4c-49ac-9170-9743f5949991",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "986f699a-decc-4057-b807-b334996141c8",
+			"id": "2cc3763b-77df-4cff-850f-85e0427bd348",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "d99bd03b-3482-4cc3-babe-a2d47d4bbc5b",
+			"id": "8752041d-492d-4d7f-851b-50a63453f6f9",
 			"key": "categoryID",
 			"value": ""
 		}
