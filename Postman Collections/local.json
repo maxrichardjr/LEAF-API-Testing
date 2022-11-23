@@ -437,11 +437,11 @@
 					"script": {
 						"id": "0fc167b9-bc0d-418f-9538-f3c0c537db90",
 						"exec": [
-							"const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
-							"console.log('Pre-request from POST request ' + catIDs);\r",
-							"//catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
+							"//const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
+							"//console.log('Pre-request from POST request ' + catIDs);\r",
+							"////catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
 							"    \r",
-							"pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
+							"//pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
 							"\r",
 							"// if(Array.isArray(catIDs) && catIDs.length > 0) {   //array item must have length > 0  (a valid Cat ID)\r",
 							"//     postman.setNextRequest('POST Category');       //iterate through all members of array   USE Test Name       VID: 7:08 - 9:16\r",
@@ -1085,23 +1085,23 @@
 	],
 	"variable": [
 		{
-			"id": "404a1a46-1121-45c4-873f-6fcac947ca44",
+			"id": "e2179ed2-189e-4a06-a697-d3b9233e8717",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "91361988-3f6d-4a23-b12c-fa803d4be024",
+			"id": "1d36412b-2daf-48f2-a1ea-cf91a693ab80",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "a8e06bd8-7f21-4bfc-9fb7-9b8eb32c9051",
+			"id": "03cbd2e3-23e0-471f-88ba-10ffc976b5c5",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "4eaa0ff8-ecec-44ef-ac7b-c95466513e49",
+			"id": "51245ca6-a0f4-49be-ba53-7a6e6e6b022e",
 			"key": "categoryID",
 			"value": ""
 		}
