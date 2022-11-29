@@ -517,7 +517,7 @@
 							"//THIS ONLY WORKS by Executing TestCollection as a COLLECTION\r",
 							"  \r",
 							"const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
-							"console.log('Pre-request from POST request ' + catIDs);\r",
+							"console.log('Pre-request for POST request ' + catIDs);\r",
 							"//catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
 							"    \r",
 							"pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
@@ -1171,23 +1171,23 @@
 	],
 	"variable": [
 		{
-			"id": "7efd96ab-d16e-4029-8851-ad24185ad3d0",
+			"id": "3a25e8df-a162-4c91-a689-3498990b6661",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "9fbee166-f01f-421f-a649-4d3951617da1",
+			"id": "c59eff95-3e67-4452-9179-3b35f6c4e2d0",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "782066e4-545c-4b1d-bf64-716d1ebcb5ba",
+			"id": "ebbe15fc-f619-420f-b2d2-711b6ad57320",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "e571468f-e94e-4f59-b027-713883e793a7",
+			"id": "c14f5eb2-940b-483d-b9bd-dd8883da8380",
 			"key": "categoryID",
 			"value": ""
 		}
