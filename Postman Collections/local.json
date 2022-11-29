@@ -477,6 +477,99 @@
 			"response": []
 		},
 		{
+			"name": "Local - GET all Categories",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5854469a-eb97-4f34-ba97-f366d75f12c2",
+						"exec": [
+							"\r",
+							"//   Begin Valentine Tutorial *********\r",
+							"//pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();  // response is stored js object\r",
+							"        //  create an array only with this ID\r",
+							"    const catIDs =  response.map(catID => catID.categoryID);   // .map goes through each element of the array   \r",
+							"    console.log(catIDs);\r",
+							"    pm.variables.set('catIDs', catIDs);     //set local variable to use in POST request\r",
+							"//}\r",
+							"\r",
+							"\r",
+							"\r",
+							"//pickup at 3:56 in vid\r",
+							"\r",
+							"\r",
+							"    //pm.expect(jsonData.categoryID).to.eql(\"form_8bfe8\");\r",
+							"//    pm.expect(catIDs.categoryID).to.eql(\"form_8bfe8\");\r",
+							"\r",
+							" //var jsonData = pm.response.json();\r",
+							" //   console.log(jsonData.response);   \r",
+							" //   pm.expect(jsonData.categoryID).to.eql(\"form_11e07\");\r",
+							"//});\r",
+							"\r",
+							"/* \r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    console.log(jsonData.response);   \r",
+							"    pm.expect(jsonData.categoryID).to.eql(\"form_11e07\");  //iterate through\r",
+							"});\r",
+							"*/\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0c5d56ec-2d8c-4a7b-bcd8-f55461935f24",
+						"exec": [
+							"\r",
+							"\r",
+							"/* \r",
+							"const random = Math.random().toString(36).substring(2);\r",
+							"const formCategories = \"formCategories \" + random;\r",
+							"pm.collectionVariables.set(\"formCategories\", formCategories);\r",
+							"*/"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "274582a4-1da1-4ba1-8426-7838e3363c98",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "CSRFToken",
+						"value": "{{CSRFToken}}",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost/LEAF_Request_Portal/api/form/categories"
+			},
+			"response": []
+		},
+		{
 			"name": "Local - FIX Create Form",
 			"event": [
 				{
@@ -1160,23 +1253,23 @@
 	],
 	"variable": [
 		{
-			"id": "ac52abaf-2f4f-4544-a112-de15e711224c",
+			"id": "09e9118d-ee20-463d-841d-5e47e03d206d",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "562f8c58-23d9-42cd-9da7-0b7afe5c6de8",
+			"id": "3a79602e-7f43-44fb-a754-d908c12bb654",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "bb215982-f4bf-41c8-95ef-f886d581f84c",
+			"id": "50cea22d-9ad5-41a9-9442-e2dcefebb4d0",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "46850c9d-3de6-4d78-b509-1a1e1d669db9",
+			"id": "e65d85e3-45e1-42f8-b96f-63b0faa643aa",
 			"key": "categoryID",
 			"value": ""
 		}
