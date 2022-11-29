@@ -501,11 +501,15 @@
 					"script": {
 						"id": "0fc167b9-bc0d-418f-9538-f3c0c537db90",
 						"exec": [
-							"//const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
-							"//console.log('Pre-request from POST request ' + catIDs);\r",
-							"////catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
+							"//For POST request\r",
+							"//Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
+							"//THIS ONLY WORKS by Executing TestCollection as a COLLECTION\r",
+							"  \r",
+							"const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
+							"console.log('Pre-request from POST request ' + catIDs);\r",
+							"//catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
 							"    \r",
-							"//pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
+							"pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
 							"\r",
 							"// if(Array.isArray(catIDs) && catIDs.length > 0) {   //array item must have length > 0  (a valid Cat ID)\r",
 							"//     postman.setNextRequest('POST Category');       //iterate through all members of array   USE Test Name       VID: 7:08 - 9:16\r",
@@ -523,6 +527,13 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "ntlm",
+					"ntlm": {
+						"password": "tester",
+						"username": "tester"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -1149,23 +1160,23 @@
 	],
 	"variable": [
 		{
-			"id": "d30b072c-7a67-49cd-95a5-06e1eab66b2f",
+			"id": "ac52abaf-2f4f-4544-a112-de15e711224c",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "58265481-d9a4-481d-aaa1-7dfac31ce1a1",
+			"id": "562f8c58-23d9-42cd-9da7-0b7afe5c6de8",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "00b8034c-6ea4-4b66-b0cf-f7c177516f2d",
+			"id": "bb215982-f4bf-41c8-95ef-f886d581f84c",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "3e0155bf-5666-4c32-abe7-d5db604a73f3",
+			"id": "46850c9d-3de6-4d78-b509-1a1e1d669db9",
 			"key": "categoryID",
 			"value": ""
 		}
