@@ -511,6 +511,34 @@
 					"script": {
 						"id": "0fc167b9-bc0d-418f-9538-f3c0c537db90",
 						"exec": [
+							"\r",
+							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime;\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
+							"\r",
+							"\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();    // response is stored js object\r",
+							"         //  create an array with only this ID\r",
+							"    const catIDs = response.map(catID => catID.categoryID);  //catIDs = array with IDs;  .map goes through each element of the array\r",
+							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(catIDs);  //\r",
+							"\r",
+							"    let currentCatID = catIDs.shift();\r",
+							"    console.log(currentCatID);\r",
+							"    pm.expect(currentCatID).to.eql(\"form_b7c34\");  //    //form_d203e\r",
+							"\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
+							"\r",
 							"//For POST request\r",
 							"//Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
 							"//THIS ONLY WORKS by Executing TestCollection as a COLLECTION\r",
@@ -1170,23 +1198,23 @@
 	],
 	"variable": [
 		{
-			"id": "c64b908d-4ed1-4b87-8e1e-b8c248aa1187",
+			"id": "5951687f-153f-4014-9355-fb005f442633",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "25aa117d-ecba-4d04-8a78-91abd4a10ad7",
+			"id": "53e9fdaf-c505-4697-9c58-2f7acc3c6e2b",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "fcd3c438-8701-4f52-8605-0b98613a6f10",
+			"id": "00aaa00b-7782-470e-90d4-d041bf8db5ab",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "ee0d7ca1-6de8-4b8f-9a89-dc0c646c039b",
+			"id": "ceb7ee45-8a57-4739-a4d0-e30f288cf6cb",
 			"key": "categoryID",
 			"value": ""
 		}
