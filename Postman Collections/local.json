@@ -6,98 +6,6 @@
 	},
 	"item": [
 		{
-			"name": "Dynamic Variables Test",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "bff05c7e-9a3d-4882-bb0f-9990f509709c",
-						"exec": [
-							"pm.test(\"Form-Trial&Error.  Status = 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"var time = pm.response.responseTime;\r",
-							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
-							"\r",
-							"// FOR POST REQUESTS\r",
-							"pm.test(\"Form categoryID created\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    //console.log.jsonData();\r",
-							"\r",
-							"                                                        //why is categoryID (Variable) inside quotes?\r",
-							"    pm.expect(jsonData.categoryID).to.eql(pm.collectionVariables.get(\"categoryID\").replaceAll(\" \", \"-\"));   \r",
-							"});\r",
-							"\r",
-							"\r",
-							"pm.test(\"Contains expected value\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    //console.log.jsonData();\r",
-							"    pm.expect(jsonData.categoryID).to.eql(\"form_11e07\");\r",
-							"});\r",
-							"\r",
-							"//    \"categoryID\": \"form_11e07\",\r",
-							"//    \"categoryName\": \"AUT (Copy)\"\r",
-							"/*\r",
-							"pm.test(\"Response time is less than limit\", function() {\r",
-							"var limit = 10;\r",
-							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
-							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
-							"});\r",
-							"\r",
-							"*/\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "54f94fa0-477e-473c-b0de-5c3ed5184d6d",
-						"exec": [
-							"const random = Math.random().toString(36).substring(2);\r",
-							"const categoryID = \"Text to post\" + random;\r",
-							"pm.collectionVariables.set(\"categoryID\", categoryID);\r",
-							""
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "986a8997-7cf1-4d7a-9d7c-2bd00c1c3825",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true,
-				"disabledSystemHeaders": {}
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "GET",
-				"header": [
-					{
-						"key": "CSRFToken",
-						"value": "{{CSRFToken}}",
-						"type": "text",
-						"disabled": true
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{  \r\n    \"categoryID\": \"{{CategoryID}}\",\r\n    \"categoryName\": \"AUT (Copy)\"   \r\n}\r\n\r\nFOR POST REQUESTS  as these values will be posted",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://localhost/LEAF_Request_Portal/api/form/categories"
-			},
-			"response": []
-		},
-		{
 			"name": "Local - Form Trial & Error (Currently Categories)",
 			"event": [
 				{
@@ -486,13 +394,13 @@
 						"exec": [
 							"\r",
 							"//   Begin Valentine Tutorial *********\r",
-							"//pm.test(\"Contains expected value\", function () {\r",
+							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();  // response is stored js object\r",
 							"        //  create an array only with this ID\r",
 							"    const catIDs =  response.map(catID => catID.categoryID);   // .map goes through each element of the array   \r",
 							"    console.log(catIDs);\r",
 							"    pm.variables.set('catIDs', catIDs);     //set local variable to use in POST request\r",
-							"//}\r",
+							"}\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1253,23 +1161,23 @@
 	],
 	"variable": [
 		{
-			"id": "397d73a9-bbb4-408d-8530-1a4a871f5f42",
+			"id": "4a065522-d06f-46f6-bd32-fb1b4074cf5c",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "3aa456e2-8def-47c5-bbbd-24a7304ef923",
+			"id": "76152edf-4351-4490-839f-d2a46b4acaf3",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "cc25dc4d-910f-4341-a172-9dc63eb4f033",
+			"id": "79ba2f3e-d414-4a0a-9c1b-b2bfb147d4da",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "be3717ad-ea5c-4fa7-9aa0-5c6c7d37c9a5",
+			"id": "f48a765f-e8ec-4084-9971-5520d9f9752f",
 			"key": "categoryID",
 			"value": ""
 		}
