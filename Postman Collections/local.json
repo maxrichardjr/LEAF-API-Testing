@@ -466,7 +466,7 @@
 						"username": "max.richard@adaptivestack.com"
 					}
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
@@ -1156,23 +1156,23 @@
 	],
 	"variable": [
 		{
-			"id": "bbf2e85d-30fb-4e94-8c63-b764b7381c33",
+			"id": "35abe744-0c5f-46d4-bda6-22ebf59478f9",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "5fdc6646-bd95-4c9a-8e49-0be0d3eb610b",
+			"id": "21bd5b8d-c52c-4b08-bff0-e2cab95fd208",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "65ba1fb9-e4f6-4c27-b1c1-5b3f3f1f7873",
+			"id": "e0e45606-f065-4d4f-be75-b4613fad9371",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "b5bbf02e-c6e0-47a4-9f94-ae203df9754b",
+			"id": "0e8c63e3-7049-42dc-943e-79a66b8f2d96",
 			"key": "categoryID",
 			"value": ""
 		}
