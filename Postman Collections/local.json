@@ -513,22 +513,26 @@
 						"id": "0fc167b9-bc0d-418f-9538-f3c0c537db90",
 						"exec": [
 							"\r",
-							"//For POST request\r",
-							"//Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
-							"//THIS ONLY WORKS by Executing TestCollection as a COLLECTION\r",
+							"////For POST request\r",
+							"////Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
+							"////THIS ONLY WORKS by Executing TestCollection as a COLLECTION\r",
 							"  \r",
-							"const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
-							"console.log('Pre-request for POST request ' + catIDs);\r",
+							"/*   Lines 6 through 10 are valid (in different context)   */\r",
+							"\r",
+							"//const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
+							"//console.log('Pre-request for POST request ' + catIDs);\r",
 							"//catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
 							"    \r",
-							"pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
+							"//pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
 							"\r",
-							"// if(Array.isArray(catIDs) && catIDs.length > 0) {   //array item must have length > 0  (a valid Cat ID)\r",
-							"//     postman.setNextRequest('POST Category');       //iterate through all members of array   USE Test Name       VID: 7:08 - 9:16\r",
-							"//     console.log('POST CATEGORY');                  //Can also use in Test section\r",
-							"// } else {\r",
-							"//     postman.setNextRequest(null);\r",
-							"// }"
+							"//// if(Array.isArray(catIDs) && catIDs.length > 0) {   //array item must have length > 0  (a valid Cat ID)\r",
+							"////     postman.setNextRequest('POST Category');       //iterate through all members of array   USE Test Name       VID: 7:08 - 9:16\r",
+							"////     console.log('POST CATEGORY');                  //Can also use in Test section\r",
+							"//// } else {\r",
+							"////     postman.setNextRequest(null);\r",
+							"//// }\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -1172,23 +1176,23 @@
 	],
 	"variable": [
 		{
-			"id": "04689e2c-902c-4d61-a013-9db539211ec8",
+			"id": "2882235d-2800-4a79-9a59-1d8549971e11",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "f58d36d6-2831-489b-8394-859c1cc2f3f6",
+			"id": "425c1e7b-e3be-4568-a7d2-d76b21f32aec",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "ed0b2e34-1809-4959-a358-d267706b19b0",
+			"id": "bd054655-4743-4557-8762-a0a9a790f07b",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "c5bc482e-3bc2-4006-bb46-fb47c785f8e0",
+			"id": "99ac6318-ad13-442e-85a8-ca530e5c95c1",
 			"key": "categoryID",
 			"value": ""
 		}
