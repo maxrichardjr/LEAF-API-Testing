@@ -490,6 +490,10 @@
 							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
 							"    console.log(catIDs);\r",
 							"    pm.variables.set('catIDs', catIDs); //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
+							"\r",
+							"    let currentCatID = catIDs.shift();\r",
+							"    console.log(currentCatID);\r",
+							"    pm.expect(currentCatID).to.eql(\"form_b7c34\");  //    //form_d203e \r",
 							"});\r",
 							"\r",
 							"// CONST RANDOM = MATH.RANDOM().TOSTRING(36).SUBSTRING(2);\r",
@@ -1166,23 +1170,23 @@
 	],
 	"variable": [
 		{
-			"id": "598e24d2-79d6-4142-b76f-ad52b2b08821",
+			"id": "c64b908d-4ed1-4b87-8e1e-b8c248aa1187",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "51959244-0ec9-4453-8dad-814f0dd8f710",
+			"id": "25aa117d-ecba-4d04-8a78-91abd4a10ad7",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "16973455-e619-4af6-917f-41dbf8baca25",
+			"id": "fcd3c438-8701-4f52-8605-0b98613a6f10",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "96f4a6ec-6531-4ec8-b088-328da9f48f66",
+			"id": "ee0d7ca1-6de8-4b8f-9a89-dc0c646c039b",
 			"key": "categoryID",
 			"value": ""
 		}
