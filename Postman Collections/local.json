@@ -523,13 +523,6 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"auth": {
-					"type": "basic",
-					"basic": {
-						"password": "@Adaptive44",
-						"username": "max.richard@adaptivestack.com"
-					}
-				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -1156,23 +1149,23 @@
 	],
 	"variable": [
 		{
-			"id": "35abe744-0c5f-46d4-bda6-22ebf59478f9",
+			"id": "d30b072c-7a67-49cd-95a5-06e1eab66b2f",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "21bd5b8d-c52c-4b08-bff0-e2cab95fd208",
+			"id": "58265481-d9a4-481d-aaa1-7dfac31ce1a1",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "e0e45606-f065-4d4f-be75-b4613fad9371",
+			"id": "00b8034c-6ea4-4b66-b0cf-f7c177516f2d",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "0e8c63e3-7049-42dc-943e-79a66b8f2d96",
+			"id": "3e0155bf-5666-4c32-abe7-d5db604a73f3",
 			"key": "categoryID",
 			"value": ""
 		}
