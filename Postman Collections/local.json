@@ -534,7 +534,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n     \"categoryID\": \"form_12345\",\r\n     \"categoryName\": \"TestForm\"\r\n}"
+					"raw": "{\r\n     \"categoryID\": \"form_12345\",\r\n     \"categoryName\": \"TestForm\",\r\n     \"categoryDescription\": \"Postman categoryDescription\"\r\n}"
 				},
 				"url": "https://localhost/LEAF_Request_Portal/api/form/new"
 			},
@@ -1156,23 +1156,23 @@
 	],
 	"variable": [
 		{
-			"id": "e8fb93b1-0cf3-4d55-827f-def605282ca1",
+			"id": "4af0e420-6ead-4808-a950-37cdc54215ca",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "b2f185f3-af2f-4e4d-9550-4172e5ac2683",
+			"id": "031e6f5e-17d6-4931-98c7-2658468ff99a",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "6c1e3235-8ce7-42cb-b963-504ed219675a",
+			"id": "e1e0f6b6-923a-4db7-8370-ccb179e05e62",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "a24d6ac7-7ba2-46a9-96c5-cceca335b80e",
+			"id": "ad3bc627-21c9-40b7-a0d0-9b8a2330c4f3",
 			"key": "categoryID",
 			"value": ""
 		}
