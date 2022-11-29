@@ -543,11 +543,11 @@
 							"//Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
 							"//THIS ONLY WORKS by Executing TestCollection as a COLLECTION\r",
 							"  \r",
-							"const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
-							"console.log('Pre-request from POST request ' + catIDs);\r",
+							"// const catIDs = pm.variables.get('catIDs');      //same array of categoryIDs created in GET request test\r",
+							"// console.log('Pre-request from POST request ' + catIDs);\r",
 							"//catIDs.shift();    //get first element/Id in array and return it. _(shift function by itself)\r",
 							"    \r",
-							"pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
+							"//pm.variables.set('currentCatID', catIDs.shift());    //array or modify original array (catIDs)  //Set variable currenCatID\r",
 							"\r",
 							"// if(Array.isArray(catIDs) && catIDs.length > 0) {   //array item must have length > 0  (a valid Cat ID)\r",
 							"//     postman.setNextRequest('POST Category');       //iterate through all members of array   USE Test Name       VID: 7:08 - 9:16\r",
@@ -1198,23 +1198,23 @@
 	],
 	"variable": [
 		{
-			"id": "5951687f-153f-4014-9355-fb005f442633",
+			"id": "95ebf44b-ab0c-4544-8d7a-d849cfb0a359",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "53e9fdaf-c505-4697-9c58-2f7acc3c6e2b",
+			"id": "6e9400b7-55b2-4410-8808-45a7a41e5174",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "00aaa00b-7782-470e-90d4-d041bf8db5ab",
+			"id": "910a2cf2-b34c-47e3-87f7-d1f709111940",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "ceb7ee45-8a57-4739-a4d0-e30f288cf6cb",
+			"id": "a3ecb292-bfbe-47b2-990a-9f4442bb6bb2",
 			"key": "categoryID",
 			"value": ""
 		}
