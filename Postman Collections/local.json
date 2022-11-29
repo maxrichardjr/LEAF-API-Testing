@@ -460,8 +460,8 @@
 			},
 			"request": {
 				"auth": {
-					"type": "ntlm",
-					"ntlm": {
+					"type": "basic",
+					"basic": {
 						"password": "@Adaptive44",
 						"username": "max.richard@adaptivestack.com"
 					}
@@ -1092,23 +1092,23 @@
 	],
 	"variable": [
 		{
-			"id": "f8725cfd-5ddf-450c-a9f5-1b37e1e44915",
+			"id": "e6ace5aa-a884-4bb5-9081-7924cf5dabb6",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "e834f13d-6006-4ce8-9a82-80facdd79972",
+			"id": "a4f5916a-d4c5-473f-b4e1-030b66eea738",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "853ecca7-98d6-4bb0-83a4-70b087df464a",
+			"id": "35320c88-9690-4f4b-b189-4d0bd777a972",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "2f6f921d-0303-44ad-b75a-efa0d1054e26",
+			"id": "502268b6-e68e-4608-981d-ef257845213c",
 			"key": "categoryID",
 			"value": ""
 		}
