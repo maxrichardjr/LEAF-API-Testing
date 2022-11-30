@@ -759,7 +759,7 @@
 							"\r",
 							"    let currentUsrAction = usrActions.shift();\r",
 							"    console.log(currentUsrAction);\r",
-							"    pm.expect(currentUsrAction).to.eql(\"AcceptJob\");  //    //form_d203e\r",
+							"    pm.expect(currentUsrAction).to.eql(\"AcceptJob\");  //  \r",
 							"\r",
 							"});\r",
 							"\r",
@@ -1166,23 +1166,23 @@
 	],
 	"variable": [
 		{
-			"id": "5f8eaa8f-ac28-4adb-bd77-868da1347411",
+			"id": "9798298a-a583-4d76-a7a4-6f9e55e79809",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "603f2ee8-5a6f-47c8-99f1-e03e70cbdbd1",
+			"id": "073cee56-d341-49b5-89fd-60df9b040681",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "1c4d058d-b10d-46f7-a840-0b5fe75fb3f6",
+			"id": "e00e1953-8ce3-434e-a388-20672a4473c9",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "40628e66-894e-4879-a8a3-f0f93e837dc9",
+			"id": "db849a47-a01c-4f0d-9402-c79f7b4e4c8b",
 			"key": "categoryID",
 			"value": ""
 		}
