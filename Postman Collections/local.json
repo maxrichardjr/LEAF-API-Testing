@@ -749,7 +749,19 @@
 							"\r",
 							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
 							"\r",
-							"// get a list of all \"AcceptJob\"\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();    // response is stored js object\r",
+							"         //  create an array with only this ID\r",
+							"    const usrActions = response.map(usrAction => usrAction.categoryID);  //usrActions = array with IDs;  .map goes through each element of the array\r",
+							"    pm.variables.set('usrActions', usrActions); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd usrActions is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(usrActions);  //\r",
+							"\r",
+							"    let currentUsrAction = usrActions.shift();\r",
+							"    console.log(currentUsrAction);\r",
+							"    pm.expect(currentUsrAction).to.eql(\"AcceptJob\");  //    //form_d203e\r",
+							"\r",
+							"});\r",
 							"\r",
 							"\r",
 							"\r",
@@ -1154,23 +1166,23 @@
 	],
 	"variable": [
 		{
-			"id": "786e77c9-d6d6-4d08-96c8-3bd191ede807",
+			"id": "2430ba14-d866-4066-9bfa-5296d16f8770",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "71355867-7998-478d-829b-cc850d347316",
+			"id": "c395688f-bb2b-49d2-b66a-d71c37a0a67a",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "4e9c46e9-106b-4932-a1b8-1933613480ad",
+			"id": "7b199050-f10c-4093-9645-80bf21bea804",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "3129dcc0-0a0b-4d72-989b-c64d597cf28d",
+			"id": "6770677e-d241-401b-a9e6-c3ed1078aff3",
 			"key": "categoryID",
 			"value": ""
 		}
