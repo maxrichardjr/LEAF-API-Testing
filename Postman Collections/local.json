@@ -938,7 +938,21 @@
 							"\r",
 							"var time = pm.response.responseTime\r",
 							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
+							"\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();    // response is stored js object\r",
+							"         //  create an array with only this ID\r",
+							"    const formIDs = response.map(formID => formID.indicatorID);  //formIDs = array with IDs;  .map goes through each element of the array\r",
+							"    pm.variables.set('formIDs', formIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd formIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(formIDs);  //\r",
+							"\r",
+							"    let currentFormID = formIDs.shift();\r",
+							"    console.log(currentFormID);\r",
+							"    pm.expect(currentFormID).to.eql(1896);  //  \r",
+							"\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -1190,23 +1204,23 @@
 	],
 	"variable": [
 		{
-			"id": "cb33f847-a748-457b-aa0c-59a1f9e1d398",
+			"id": "2cb10c6d-a16a-47ec-b265-33f578ccd0d6",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "3a5ae848-c7fb-415e-abb3-f6463d0f2223",
+			"id": "e3173a6e-d934-48fc-b757-1bc9a6f86efe",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "d97fcd36-ab75-434a-afc7-525d7a0376a7",
+			"id": "097a62b0-8de5-420f-b341-16cb8459c100",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "8011cf2d-ae90-4ac7-a3fb-22ee30311ab4",
+			"id": "672f584a-b6fe-4302-8e09-74822608330a",
 			"key": "categoryID",
 			"value": ""
 		}
