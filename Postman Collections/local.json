@@ -736,13 +736,40 @@
 					"script": {
 						"id": "f211c6f6-517d-47d4-9606-9a5eb5cdbb2e",
 						"exec": [
-							"pm.test(\"Form-getAPI-URL.  Status = 200\", function () {\r",
+							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
+							"});     //\r",
+							"\r",
+							"var time = pm.response.responseTime;\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
+							"\r",
+							"pm.test(\"JSON Contains expected value\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
+							"    console.log(catIDs);\r",
+							"    pm.variables.set('catIDs', catIDs); //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
 							"});\r",
 							"\r",
-							"var time = pm.response.responseTime\r",
+							"/* \r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    console.log(jsonData.response);   \r",
+							"    pm.expect(jsonData.categoryID).to.eql(\"form_11e07\");  //iterate through\r",
+							"});\r",
+							"*/\r",
 							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+							"\r",
+							"\r",
+							"//    \"categoryID\": \"form_11e07\",\r",
+							"//    \"categoryName\": \"AUT (Copy)\"\r",
+							"/*\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 10;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});\r",
+							"\r",
+							"*/"
 						],
 						"type": "text/javascript"
 					}
@@ -1270,23 +1297,23 @@
 	],
 	"variable": [
 		{
-			"id": "9e1f729e-7a32-44fb-9c78-2e9cbe94bdc5",
+			"id": "932c993c-fe8b-481f-8d46-42265bea22fa",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c08c79ff-df3d-4103-9b66-6922e3331583",
+			"id": "9b5586bf-cf4a-4f38-b4ab-4cc4cf10ae5d",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "c51ab717-6eeb-426f-bbce-476ecbb55da2",
+			"id": "f7aec32a-9d3f-4f94-8266-654e1abd2194",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "e01b1fa4-6053-4e6f-9fb2-c3cd02aff62e",
+			"id": "49260517-c833-43b9-96f5-6abad5691cbd",
 			"key": "categoryID",
 			"value": ""
 		}
