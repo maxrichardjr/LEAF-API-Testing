@@ -390,7 +390,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "5854469a-eb97-4f34-ba97-f366d75f12c2",
+						"id": "059427ba-d2fe-4623-86aa-969a477168e3",
 						"exec": [
 							"\r",
 							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
@@ -424,7 +424,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "0c5d56ec-2d8c-4a7b-bcd8-f55461935f24",
+						"id": "7111c3fc-6e22-426e-8816-357c7292b88c",
 						"exec": [
 							"\r",
 							"\r",
@@ -1176,23 +1176,23 @@
 	],
 	"variable": [
 		{
-			"id": "913acfd9-46a9-4556-9ca4-5948d8267e32",
+			"id": "aa6de9d9-759a-499e-b482-64b944578422",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "f772f6a4-6c30-49f7-aab7-542326298ce9",
+			"id": "c49d705d-7c49-46bb-9a9f-2e2cfbb636ad",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "9bb31a44-8623-4b20-8a9a-d91a605cb11b",
+			"id": "0d1e1314-826d-4403-a3d5-025603d53476",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "18ce2542-1617-4399-a783-2ff300136d17",
+			"id": "6802bdb5-622e-41f1-bc88-f10ae6bd7059",
 			"key": "categoryID",
 			"value": ""
 		}
