@@ -1047,10 +1047,24 @@
 							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();    // response is stored js object\r",
+							"         //  create an array with only this ID\r",
+							"    const formIDs = response.map(formID => formID.indicatorID);  //formIDs = array with IDs;  .map goes through each element of the array\r",
+							"    pm.variables.set('formIDs', formIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd formIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(formIDs);  //\r",
 							"\r",
+							"    let currentFormID = formIDs.shift();\r",
+							"    console.log(currentFormID);\r",
+							"    pm.expect(currentFormID).to.eql(1896);  //  \r",
+							"\r",
+							"});\r",
 							"var time = pm.response.responseTime\r",
 							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))"
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
+							"\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -1218,23 +1232,23 @@
 	],
 	"variable": [
 		{
-			"id": "f3f6e503-ec7c-4eb7-a958-f36f173962a5",
+			"id": "04906c59-08a1-495d-89fd-cbd27d6a18e3",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "17934ccb-1833-4d13-98f7-3bf5cb0de76a",
+			"id": "d6576837-b42f-4ed9-b7f5-338eb36f38ac",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "565fa351-81c6-4309-966f-601668d942af",
+			"id": "afcd44d5-efb0-4606-91cd-77a4f94d022f",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "26ee37a1-0d88-43b1-b06d-f7b60e0aea2b",
+			"id": "4676fe25-3b95-4d0b-8eb2-70b8c9decff6",
 			"key": "categoryID",
 			"value": ""
 		}
