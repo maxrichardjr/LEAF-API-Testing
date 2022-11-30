@@ -184,6 +184,68 @@
 			"response": []
 		},
 		{
+			"name": "Local - All Forms",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f211c6f6-517d-47d4-9606-9a5eb5cdbb2e",
+						"exec": [
+							"pm.test(\"Form-getAPI-URL.  Status = 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"var time = pm.response.responseTime\r",
+							"\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
+							" \r",
+							"\r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();\r",
+							"    const catIDs = response.map(catID => catID.categoryID);    //catIDs is array containing IDs  goes through each element of the array\r",
+							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(catIDs);  //\r",
+							"\r",
+							"    let currentCatID = catIDs.shift();\r",
+							"    console.log(currentCatID);\r",
+							"    pm.expect(currentCatID).to.eql(\"form_b7c34\");  //  \r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "0a7d7a0c-33c5-46d2-8088-4a366dbee5b3",
+						"exec": [
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"id": "06845091-e9f9-4f46-b93f-866ba816d40a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://localhost/LEAF_Request_Portal/api/form/categories"
+			},
+			"response": []
+		},
+		{
 			"name": "Local - Form Categories",
 			"event": [
 				{
@@ -259,36 +321,47 @@
 			"response": []
 		},
 		{
-			"name": "Local - All Forms",
+			"name": "Local - FIX Form Indicators",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "f211c6f6-517d-47d4-9606-9a5eb5cdbb2e",
+						"id": "c57ea32b-2a69-4e4a-a2c3-644fa0144d1d",
 						"exec": [
-							"pm.test(\"Form-getAPI-URL.  Status = 200\", function () {\r",
+							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"var time = pm.response.responseTime\r",
+							"var time = pm.response.responseTime;\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
 							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
-							" \r",
-							"\r",
-							"pm.test(\"Contains expected value\", function () {\r",
+							"pm.test(\"JSON Contains expected value\", function () {\r",
 							"    const response = pm.response.json();\r",
-							"    const catIDs = response.map(catID => catID.categoryID);    //catIDs is array containing IDs  goes through each element of the array\r",
-							"    pm.variables.set('catIDs', catIDs); //Creates a variable or updates an existing one.\r",
-							"                                        //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
-							"    console.log(catIDs);  //\r",
-							"\r",
-							"    let currentCatID = catIDs.shift();\r",
-							"    console.log(currentCatID);\r",
-							"    pm.expect(currentCatID).to.eql(\"form_b7c34\");  //  \r",
+							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
+							"    console.log(catIDs);\r",
+							"    pm.variables.set('catIDs', catIDs); //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
 							"});\r",
 							"\r",
+							"/* \r",
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    console.log(jsonData.response);   \r",
+							"    pm.expect(jsonData.categoryID).to.eql(\"form_11e07\");  //iterate through\r",
+							"});\r",
+							"*/\r",
 							"\r",
-							""
+							"\r",
+							"\r",
+							"//    \"categoryID\": \"form_11e07\",\r",
+							"//    \"categoryName\": \"AUT (Copy)\"\r",
+							"/*\r",
+							"pm.test(\"Response time is less than limit\", function() {\r",
+							"var limit = 10;\r",
+							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
+							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
+							"});\r",
+							"\r",
+							"*/"
 						],
 						"type": "text/javascript"
 					}
@@ -296,17 +369,18 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "0a7d7a0c-33c5-46d2-8088-4a366dbee5b3",
+						"id": "94ef5633-60b5-466e-a324-38ce91df8460",
 						"exec": [
-							"\r",
-							"\r",
-							""
+							"/* const random = Math.random().toString(36).substring(2);\r",
+							"const formCategories = \"formCategories \" + random;\r",
+							"pm.collectionVariables.set(\"formCategories\", formCategories);\r",
+							"*/"
 						],
 						"type": "text/javascript"
 					}
 				}
 			],
-			"id": "06845091-e9f9-4f46-b93f-866ba816d40a",
+			"id": "be905dca-86c3-4d63-8cff-fa8009ecd774",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -316,7 +390,16 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "https://localhost/LEAF_Request_Portal/api/form/categories"
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n    \"categoryID\": \"form_11e07\",\r\n    \"categoryName\": \"AUT (Copy)\"   \r\n}\r\n\r\nFOR POST REQUESTS",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://localhost/LEAF_Request_Portal/api/form/categories&id='form_b7c34'"
 			},
 			"response": []
 		},
@@ -513,7 +596,7 @@
 						"id": "0fc167b9-bc0d-418f-9538-f3c0c537db90",
 						"exec": [
 							"\r",
-							"////For POST request\r",
+							"////For POST requests\r",
 							"////Probably need to use the 'POST' address as listed in the LEAF API Documentation\r",
 							"////THIS ONLY WORKS by Executing TestCollection as a COLLECTION\r",
 							"  \r",
@@ -557,89 +640,6 @@
 					"raw": "{\r\n     \"categoryID\": 12345\",\r\n     \"categoryName\": \"TestForm\",\r\n     \"categoryDescription\": \"Postman categoryDescription\"\r\n}"
 				},
 				"url": "https://localhost/LEAF_Request_Portal/api/form/new"
-			},
-			"response": []
-		},
-		{
-			"name": "Local - FIX Form Indicators",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"id": "c57ea32b-2a69-4e4a-a2c3-644fa0144d1d",
-						"exec": [
-							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
-							"var time = pm.response.responseTime;\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
-							"\r",
-							"pm.test(\"JSON Contains expected value\", function () {\r",
-							"    const response = pm.response.json();\r",
-							"    const catIDs = response.map(catID => catID.categoryID);         //catIDs is the array containing IDs\r",
-							"    console.log(catIDs);\r",
-							"    pm.variables.set('catIDs', catIDs); //2nd catIDs is the var defined on line 3 - Only works in collection runner\r",
-							"});\r",
-							"\r",
-							"/* \r",
-							"pm.test(\"Contains expected value\", function () {\r",
-							"    var jsonData = pm.response.json();\r",
-							"    console.log(jsonData.response);   \r",
-							"    pm.expect(jsonData.categoryID).to.eql(\"form_11e07\");  //iterate through\r",
-							"});\r",
-							"*/\r",
-							"\r",
-							"\r",
-							"\r",
-							"//    \"categoryID\": \"form_11e07\",\r",
-							"//    \"categoryName\": \"AUT (Copy)\"\r",
-							"/*\r",
-							"pm.test(\"Response time is less than limit\", function() {\r",
-							"var limit = 10;\r",
-							"pm.expect(pm.response.responseTime, \"Response time was longer than \" + limit + \" ms.\").to.be.below(limit);\r",
-							"console.log(\"Response Time: \" + pm.response.responseTime + \" ms\" + \" / Response Date: \" + pm.response.headers.get(\"Date\"));\r",
-							"});\r",
-							"\r",
-							"*/"
-						],
-						"type": "text/javascript"
-					}
-				},
-				{
-					"listen": "prerequest",
-					"script": {
-						"id": "94ef5633-60b5-466e-a324-38ce91df8460",
-						"exec": [
-							"/* const random = Math.random().toString(36).substring(2);\r",
-							"const formCategories = \"formCategories \" + random;\r",
-							"pm.collectionVariables.set(\"formCategories\", formCategories);\r",
-							"*/"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"id": "be905dca-86c3-4d63-8cff-fa8009ecd774",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{  \r\n    \"categoryID\": \"form_11e07\",\r\n    \"categoryName\": \"AUT (Copy)\"   \r\n}\r\n\r\nFOR POST REQUESTS",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "https://localhost/LEAF_Request_Portal/api/form/categories&id='form_b7c34'"
 			},
 			"response": []
 		},
@@ -1176,23 +1176,23 @@
 	],
 	"variable": [
 		{
-			"id": "aa6de9d9-759a-499e-b482-64b944578422",
+			"id": "880a401f-f8f8-4300-b275-4a4b6d6ad199",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c49d705d-7c49-46bb-9a9f-2e2cfbb636ad",
+			"id": "03e83f4b-16e0-423a-b74a-5a82888e224f",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "0d1e1314-826d-4403-a3d5-025603d53476",
+			"id": "08bab64e-0e5f-4ac8-96d4-2b4145b548b5",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "6802bdb5-622e-41f1-bc88-f10ae6bd7059",
+			"id": "7cb7ef84-ce7f-47b3-bf34-5e2e61cb1c09",
 			"key": "categoryID",
 			"value": ""
 		}
