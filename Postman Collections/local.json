@@ -1047,24 +1047,24 @@
 							"pm.test(\"Form-getSpecific Form.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
-							"pm.test(\"Contains expected value\", function () {\r",
-							"    const response = pm.response.json();    // response is stored js object\r",
-							"         //  create an array with only this ID\r",
-							"    const formIDs = response.map(formID => formID.indicatorID);  //formIDs = array with IDs;  .map goes through each element of the array\r",
-							"    pm.variables.set('formIDs', formIDs); //Creates a variable or updates an existing one.\r",
-							"                                        //2nd formIDs is the var defined on line 3 - Only works in collection runner\r",
-							"    console.log(formIDs);  //\r",
 							"\r",
-							"    let currentFormID = formIDs.shift();\r",
-							"    console.log(currentFormID);\r",
-							"    pm.expect(currentFormID).to.eql(1896);  //  \r",
-							"\r",
-							"});\r",
-							"var time = pm.response.responseTime\r",
+							"var time = pm.response.responseTime;\r",
 							"\r",
 							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
 							"\r",
-							""
+							"pm.test(\"Contains expected value\", function () {\r",
+							"    const response = pm.response.json();    // response is stored js object\r",
+							"         //  create an array with only this ID\r",
+							"    const workFlowIDs = response.map(workFlowID => workFlowID.workflowID);  //workFlowIDs = array with IDs;  .map goes through each element of the array\r",
+							"    pm.variables.set('workFlowIDs', workFlowIDs); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd workFlowIDs is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(workFlowIDs);  //\r",
+							"\r",
+							"    let currentWorkflowID = workFlowIDs.shift();\r",
+							"    console.log(currentWorkflowID);\r",
+							"    pm.expect(currentWorkflowID).to.eql(0);  \r",
+							"\r",
+							"});"
 						],
 						"type": "text/javascript"
 					}
@@ -1232,23 +1232,23 @@
 	],
 	"variable": [
 		{
-			"id": "700a91b0-686d-492f-92b5-4a6ffb242ed2",
+			"id": "f5549cf5-aad3-4f97-b690-87d2057fdddb",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "6f9d21bd-5637-45e1-90a6-439b5e8331f4",
+			"id": "201ac24f-c7c7-4b89-a385-9df4d5102aa7",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "a0067577-7ade-4664-b551-3a0b165711da",
+			"id": "e41dd00b-0395-4e85-a854-e0930744d544",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "a33b91a6-cb4b-4825-8bca-60e13b1b2b60",
+			"id": "d2e5b7ee-5ae9-4c72-a41f-4723201662ea",
 			"key": "categoryID",
 			"value": ""
 		}
