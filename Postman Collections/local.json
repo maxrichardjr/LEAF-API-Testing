@@ -1232,23 +1232,23 @@
 	],
 	"variable": [
 		{
-			"id": "9d98dcac-0d83-4f18-8444-3cebc59667d6",
+			"id": "cf1a45cd-af23-4752-9b86-9eae6b91f16e",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "a5bf0e4f-e623-498c-978f-893af2fa2f66",
+			"id": "464924d7-c94d-44ea-88f7-01ada94c7cea",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "3fc98ed0-54b1-494a-9a85-eef1030f634d",
+			"id": "aed3f27b-2975-4f48-ac2f-52d5cc034f22",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "4370b787-2feb-4c16-898a-2cff7eaf7ff8",
+			"id": "7ad0cbbd-53e6-45b7-84c3-02a184f07b14",
 			"key": "categoryID",
 			"value": ""
 		}
