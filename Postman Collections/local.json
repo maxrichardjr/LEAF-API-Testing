@@ -703,9 +703,9 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
-							"var time = pm.response.responseTime\r",
+							"var time = pm.response.responseTime;\r",
 							"\r",
-							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200))\r",
+							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
 							"\r",
 							"//workflowID: \"70\"\r",
 							"//workflowID: \"63\"\r",
@@ -1232,23 +1232,23 @@
 	],
 	"variable": [
 		{
-			"id": "274262cc-db75-40e5-a8da-c522c23d3d77",
+			"id": "5091c4c7-b2e1-4039-b719-eb3cc683050d",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "40b491de-e213-403f-9d0d-1bdf69f84597",
+			"id": "fdf016d9-ade9-4f09-8d73-5de3cf76783a",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "d47084db-7267-4fcc-944d-4bcc427c8d9c",
+			"id": "3e981fcb-e588-4104-9743-591662cec6b5",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "90d14a57-44cc-4f3b-89d3-a67d67f13a1c",
+			"id": "211ed1bb-7a4f-4200-84aa-2df7fc0e65d0",
 			"key": "categoryID",
 			"value": ""
 		}
