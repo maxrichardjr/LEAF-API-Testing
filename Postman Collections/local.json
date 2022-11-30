@@ -1135,7 +1135,7 @@
 			"response": []
 		},
 		{
-			"name": "Local - Post a note",
+			"name": "FIX Local - Post a note",
 			"event": [
 				{
 					"listen": "test",
@@ -1232,23 +1232,23 @@
 	],
 	"variable": [
 		{
-			"id": "ffcdadd1-acee-42ea-a9fc-1fadd99c02fd",
+			"id": "9d98dcac-0d83-4f18-8444-3cebc59667d6",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c71df46e-58b3-4d84-94f4-9b5790f1100f",
+			"id": "a5bf0e4f-e623-498c-978f-893af2fa2f66",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "2bd1ff4f-e0a6-4f5f-be42-edc845aca0b2",
+			"id": "3fc98ed0-54b1-494a-9a85-eef1030f634d",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "ab83eecf-ee4f-44b8-bf43-cfe9e74d123e",
+			"id": "4370b787-2feb-4c16-898a-2cff7eaf7ff8",
 			"key": "categoryID",
 			"value": ""
 		}
