@@ -1055,14 +1055,14 @@
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();    // response is stored js object\r",
 							"         //  create an array with only this ID\r",
-							"    const workFlowIDs = response.map(workFlowID => workFlowID.workflowID);  //workFlowIDs = array with IDs;  .map goes through each element of the array\r",
-							"    pm.variables.set('workFlowIDs', workFlowIDs); //Creates a variable or updates an existing one.\r",
-							"                                        //2nd workFlowIDs is the var defined on line 3 - Only works in collection runner\r",
-							"    console.log(workFlowIDs);  //\r",
+							"    const names = response.map(name => name.name);  //names = array with IDs;  .map goes through each element of the array\r",
+							"    pm.variables.set('names', names); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd names is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(names);  //\r",
 							"\r",
-							"    let currentWorkflowID = workFlowIDs.shift();\r",
-							"    console.log(currentWorkflowID);\r",
-							"    pm.expect(currentWorkflowID).to.eql(0);  \r",
+							"    let currentName = names.shift();\r",
+							"    console.log(currentName);\r",
+							"    pm.expect(currentName).to.eql(\"Boyd Schaden\");  \r",
 							"\r",
 							"});"
 						],
@@ -1232,23 +1232,23 @@
 	],
 	"variable": [
 		{
-			"id": "bf9c7fcf-9176-4416-8335-bf2e34bacfb1",
+			"id": "43a4fe2f-8307-4ce9-a546-1e7a2173d231",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "73ca9369-6e36-4324-8ab4-a312ff0dee1d",
+			"id": "ee64d4cb-1d1a-4811-81c3-2bc1d42842e0",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "d5c8a9b2-3225-4b31-9766-db1fcacccb6f",
+			"id": "f5fdb697-418b-46fa-8523-0fc7f6f0dc20",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "c57a7706-a741-45b0-8493-33efb640f4fe",
+			"id": "71f6a22a-9f16-47de-a9e8-737b3ec29848",
 			"key": "categoryID",
 			"value": ""
 		}
