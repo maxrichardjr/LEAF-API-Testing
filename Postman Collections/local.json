@@ -1055,12 +1055,12 @@
 							"pm.test(\"Contains expected value\", function () {\r",
 							"    const response = pm.response.json();    // response is stored js object\r",
 							"         //  create an array with only this ID\r",
-							"    const names = response.map(name => name.name);  //names = array with IDs;  .map goes through each element of the array\r",
-							"    pm.variables.set('names', names); //Creates a variable or updates an existing one.\r",
-							"                                        //2nd names is the var defined on line 3 - Only works in collection runner\r",
-							"    console.log(names);  //\r",
+							"    const recordNames = response.map(recordName => recordName.name);  //recordNames = array with IDs;  .map goes through each element of the array\r",
+							"    pm.variables.set('recordNames', recordNames); //Creates a variable or updates an existing one.\r",
+							"                                        //2nd recordNames is the var defined on line 3 - Only works in collection runner\r",
+							"    console.log(recordNames);  //\r",
 							"\r",
-							"    let currentName = names.shift();\r",
+							"    let currentName = recordNames.shift();\r",
 							"    console.log(currentName);\r",
 							"    pm.expect(currentName).to.eql(\"Boyd Schaden\");  \r",
 							"\r",
@@ -1232,23 +1232,23 @@
 	],
 	"variable": [
 		{
-			"id": "cf1a45cd-af23-4752-9b86-9eae6b91f16e",
+			"id": "0d4feb7b-bfb9-42fc-a8e8-366d6b7a0e44",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "464924d7-c94d-44ea-88f7-01ada94c7cea",
+			"id": "f9460395-45f0-4ef8-bd4f-5d7fa52da45f",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "aed3f27b-2975-4f48-ac2f-52d5cc034f22",
+			"id": "3474fdcc-8d53-470e-a03a-d24a7ffab02d",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "7ad0cbbd-53e6-45b7-84c3-02a184f07b14",
+			"id": "2270d2e1-302e-4d14-8ff8-ba9d11a082dc",
 			"key": "categoryID",
 			"value": ""
 		}
