@@ -1249,15 +1249,15 @@
 	"auth": {
 		"type": "ntlm",
 		"ntlm": {
-			"password": "211212",
-			"username": "OITBIRRICHAM1"
+			"password": "",
+			"username": ""
 		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "d1db69b7-dfb9-4712-aac4-a4a32de30174",
+				"id": "bbd804ea-3994-4cfd-ba10-c37aa8d7d2b4",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1267,7 +1267,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "9cdd4731-51a9-4035-a4c7-0bcb6add81c5",
+				"id": "d52eddde-4375-4834-b318-25e833a20edd",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -1277,23 +1277,23 @@
 	],
 	"variable": [
 		{
-			"id": "82a4460a-099b-488f-8ac6-042a63bedd48",
+			"id": "e56ce47f-5d0e-40cb-9e5a-781c0179cae6",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "0df4e791-7e94-4718-953b-e66c786d4b39",
+			"id": "fe990318-4008-4f79-a844-6427fde14ad7",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "1d481bad-b3a4-4515-833e-9c344db446b8",
+			"id": "6304902c-6db6-4f50-a2c5-3de5318e377f",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "c3f06f4f-176e-4ba1-85ba-32aa429a7127",
+			"id": "99b1d0e0-3f42-4de6-bb1d-99872d754e38",
 			"key": "categoryID",
 			"value": ""
 		}
