@@ -254,6 +254,13 @@
 						"id": "c57ea32b-2a69-4e4a-a2c3-644fa0144d1d",
 						"exec": [
 							" \r",
+							"const cookieJar = pm.cookies.jar();\r",
+							"//console.log(cookieJar.cookies);\r",
+							"cookieJar.get('http://localhost', PHPSESSID, callback(error, cookie));\r",
+							"cookieJar.set(URL, { name: PHPSESSID, value: cookieJar.cookie, httpOnly: true }, callback (error, cookie));\r",
+							"\r",
+							"\r",
+							"\r",
 							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
@@ -288,10 +295,7 @@
 					"script": {
 						"id": "94ef5633-60b5-466e-a324-38ce91df8460",
 						"exec": [
-							"const cookieJar = pm.cookies.jar();\r",
-							"//console.log(cookieJar.cookies);\r",
-							"cookieJar.get('http://localhost', PHPSESSID, callback(error, cookie));\r",
-							"cookieJar.set(URL, { name: PHPSESSID, value: cookieJar.cookie, httpOnly: true }, callback (error, cookie));\r",
+							"\r",
 							"\r",
 							"\r",
 							"/* const random = Math.random().toString(36).substring(2);\r",
@@ -1226,23 +1230,23 @@
 	],
 	"variable": [
 		{
-			"id": "3485be9a-0bd7-45a1-8cbc-cd8c9a91199a",
+			"id": "b2462bce-dfb8-45c2-837f-a3caaabec7bd",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "b20b3038-3486-4aca-8675-f3a62396a410",
+			"id": "866b7e80-9dac-4eaf-b392-d922f6ddffbe",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "ad141fc0-8d3f-44af-8708-d37c8fb0886e",
+			"id": "1590728a-a9c8-4a63-8161-ad7b956a5807",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "80e9d880-0db6-4206-aec6-8703f74bc008",
+			"id": "49fef3bc-09d4-45a4-a791-d6d6bc82cb84",
 			"key": "categoryID",
 			"value": ""
 		}
