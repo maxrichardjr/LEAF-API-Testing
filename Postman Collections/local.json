@@ -554,6 +554,10 @@
 							"    pm.expect(currentCatID).to.eql(\"form_b7c34\");  //    //form_d203e \r",
 							"});\r",
 							"\r",
+							"pm.test(\"Successful POST request\", function () {\r",
+							"\tpm.expect(pm.response.code).to.be.oneOf([201, 202]);\r",
+							"});\r",
+							"\r",
 							"// CONST RANDOM = MATH.RANDOM().TOSTRING(36).SUBSTRING(2);\r",
 							"\r",
 							"// CONST FORMCATEGORIES = \"FORMCATEGORIES \" + RANDOM;\r",
@@ -1234,23 +1238,23 @@
 	],
 	"variable": [
 		{
-			"id": "2c334ff0-71e4-45f2-bce6-c180b31cc0dd",
+			"id": "300bb04e-6089-404f-81c9-bc901b73b7d7",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c15ae41b-c7c5-4223-8ed3-f18b94850354",
+			"id": "48c5cb21-5df4-47b5-8f2a-a545558ecc7b",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "75617b14-2320-41c2-b5c0-e2a48cc9717c",
+			"id": "4086c34b-b130-4d0f-bbb9-75dd500947da",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "998568a7-95ea-4a18-ad7b-d78b2048dbea",
+			"id": "15078051-b97c-49ca-b31a-bad92057890d",
 			"key": "categoryID",
 			"value": ""
 		}
