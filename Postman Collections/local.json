@@ -255,7 +255,7 @@
 						"exec": [
 							" \r",
 							"//const cookieJar = pm.cookies.jar();\r",
-							"//console.log(cookieJar.cookies);\r",
+							"////console.log(cookieJar.cookies);\r",
 							"//cookieJar.get('http://localhost', PHPSESSID, callback(error, cookie));\r",
 							"//cookieJar.set(URL, { name: PHPSESSID, value: cookieJar.cookie, httpOnly: true }, callback (error, cookie));\r",
 							"\r",
@@ -1230,23 +1230,23 @@
 	],
 	"variable": [
 		{
-			"id": "cedd5766-225f-4dff-98f9-646c524a9699",
+			"id": "c311a43d-7618-485e-9f5a-997642829ab3",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "08bc546b-5064-4069-9723-05d5391929e3",
+			"id": "50a6f34b-b214-433e-b3b2-817be3c82a93",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "f09dcf33-ed62-4ccc-bc27-644a50952211",
+			"id": "ee168dcc-4484-432b-a7a5-74c1dfb69736",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "0f823a6d-8fab-4cf5-9396-8b60e0f01b29",
+			"id": "ee825be1-6cc7-4f6b-84d8-a9ba7d2251d4",
 			"key": "categoryID",
 			"value": ""
 		}
