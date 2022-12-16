@@ -260,15 +260,6 @@
 							"console.log(cookieJar.status);\r",
 							"//cookieJar.set(URL, { name: PHPSESSID, value: cookieJar.cookie, httpOnly: true }, callback (error, cookie));\r",
 							"\r",
-							"var schema = {\r",
-							"\t\"items\": {\r",
-							"\t\t\"type\": \"boolean\"\r",
-							"\t}\r",
-							"};\r",
-							"\r",
-							"var data1 = [true, false];\r",
-							"var data2 = [true, 123];\r",
-							"\r",
 							"\r",
 							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -1244,23 +1235,23 @@
 	],
 	"variable": [
 		{
-			"id": "4d37af3a-c0a8-4e2b-8a36-9dc0382baee3",
+			"id": "db9490c2-61f3-4655-8850-f264defd5059",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "ec7eee94-5d4d-4cf2-a8d5-89a4416136ec",
+			"id": "1328734b-c569-4ee3-82a1-009fef54654c",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "b019ec2c-c232-4386-ab1b-ef9c18985db8",
+			"id": "887e4903-21fb-4f12-ad7f-cbb81c3164fe",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "faea9842-f21c-46cb-a0a9-8b98804c0313",
+			"id": "f61e1e43-c93d-4600-be7d-66a36720bbd5",
 			"key": "categoryID",
 			"value": ""
 		}
