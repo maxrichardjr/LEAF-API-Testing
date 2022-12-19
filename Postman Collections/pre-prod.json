@@ -634,7 +634,7 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "https://leaf-preprod.va.gov/Academy/Demo1/api/workflow"
+				"url": "{{PreProd_URL}}/workflow"
 			},
 			"response": []
 		},
@@ -1049,7 +1049,7 @@
 	],
 	"variable": [
 		{
-			"id": "db98b5cf-10af-4c49-8d9a-caf20fd64496",
+			"id": "ceef791a-de27-4ac8-ac59-2f42dfb4472f",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
