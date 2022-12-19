@@ -661,7 +661,7 @@
 				},
 				"method": "GET",
 				"header": [],
-				"url": "https://localhost/LEAF_Request_Portal/api/"
+				"url": "{{Local_URL}}"
 			},
 			"response": []
 		},
@@ -1235,23 +1235,23 @@
 	],
 	"variable": [
 		{
-			"id": "58984b1b-abc2-4445-a368-b2c0c5fe4f4d",
+			"id": "1d229483-b5a1-406e-a47c-9edc62de6212",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "80b8f991-b6af-44df-af0e-4e93b0e0fca6",
+			"id": "b52ae4b4-2986-4d51-af73-734d785d6bc7",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "9d00a759-04cc-4be2-8b9b-25c8304a3c16",
+			"id": "86ae0eaf-a75e-4e8a-a9f7-f6c1fed20c5a",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "231fe3b7-5eb7-4980-a5cd-2884dd59611c",
+			"id": "76d18b31-3b1c-44e3-97a1-a20465b34ab2",
 			"key": "categoryID",
 			"value": ""
 		}
