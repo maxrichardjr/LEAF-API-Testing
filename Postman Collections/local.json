@@ -492,7 +492,7 @@
 					"mode": "raw",
 					"raw": "{\r\n     \"categoryID\": \"form_b7c34\",\r\n     \"categoryName\": \"TestForm\",\r\n     \"categoryDescription\": \"Postman categoryDescription\"\r\n}"
 				},
-				"url": "https://localhost/LEAF_Request_Portal/api/form/new"
+				"url": "{{Local_URL}}/form/new"
 			},
 			"response": []
 		},
@@ -1235,23 +1235,23 @@
 	],
 	"variable": [
 		{
-			"id": "5b241848-4218-4828-870c-786ed448dc85",
+			"id": "8156b602-f276-4242-9067-66104a0fee0b",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "93082039-26de-4bb3-b4dd-fec821db01c1",
+			"id": "c1911fa2-9ee2-4d67-970c-6879b1bf3d8c",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "9285a168-9319-4826-9da9-a33eaeda0613",
+			"id": "c4e60c71-63ea-4fd0-8256-d645003b3e21",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "f077145e-efae-4d3a-bc4e-b2516e94cdec",
+			"id": "c12ab8c0-c69e-4765-8034-41839e96985a",
 			"key": "categoryID",
 			"value": ""
 		}
