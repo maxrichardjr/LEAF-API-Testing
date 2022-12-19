@@ -433,7 +433,7 @@
 			"response": []
 		},
 		{
-			"name": "Local - Set Token for POST requests",
+			"name": "FIX Local - Set Token for POST requests",
 			"event": [
 				{
 					"listen": "test",
@@ -1235,23 +1235,23 @@
 	],
 	"variable": [
 		{
-			"id": "8156b602-f276-4242-9067-66104a0fee0b",
+			"id": "b82d8b7f-bdd6-40ce-a472-1e34759a96b5",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c1911fa2-9ee2-4d67-970c-6879b1bf3d8c",
+			"id": "c92d4eb3-cdae-49ae-87b2-8ec9308bcdcb",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "c4e60c71-63ea-4fd0-8256-d645003b3e21",
+			"id": "21e75421-6d4c-43ac-b16b-44da98638fd3",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "c12ab8c0-c69e-4765-8034-41839e96985a",
+			"id": "a99541fa-ade6-46ea-8558-86ca593eb62b",
 			"key": "categoryID",
 			"value": ""
 		}
