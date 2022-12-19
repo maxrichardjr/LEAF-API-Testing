@@ -1173,14 +1173,11 @@
 					"raw": "{  \r\n    \"formID\": \"form_12307\",\r\n    \"requestData\": \"Test Form\"   \r\n}"
 				},
 				"url": {
-					"raw": "https://localhost/LEAF_Request_Portal/api/note?recordID=268&note=Some note to post to the db&userID=tester",
-					"protocol": "https",
+					"raw": "{{Local_URL}}/note?recordID=268&note=Some note to post to the db&userID=tester",
 					"host": [
-						"localhost"
+						"{{Local_URL}}"
 					],
 					"path": [
-						"LEAF_Request_Portal",
-						"api",
 						"note"
 					],
 					"query": [
@@ -1190,13 +1187,11 @@
 						},
 						{
 							"key": "note",
-							"value": "Some note to post to the db",
-							"type": "text"
+							"value": "Some note to post to the db"
 						},
 						{
 							"key": "userID",
-							"value": "tester",
-							"type": "text"
+							"value": "tester"
 						}
 					]
 				}
@@ -1235,23 +1230,23 @@
 	],
 	"variable": [
 		{
-			"id": "47b9b7a5-4e5b-488b-8f1a-5270670d928c",
+			"id": "dd89d70a-b423-4496-872e-9b7916d1c86e",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "0053e5a4-bfa4-4cff-9730-776783d43f4f",
+			"id": "4280435d-5b5f-4167-98c7-a3f8aa253e6f",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "d63a8c40-06fd-42f0-81ec-3ef05ce91eb2",
+			"id": "5cfd1279-1664-42c3-83aa-d63a769a4c32",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "3ed295b0-a2ac-4f31-bf05-c4ee79eb6e64",
+			"id": "33ad7a63-53a7-40d5-8345-8526420340b8",
 			"key": "categoryID",
 			"value": ""
 		}
