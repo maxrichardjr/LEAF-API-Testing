@@ -613,7 +613,7 @@
 					"mode": "raw",
 					"raw": "{\r\n     \"categoryID\": 12345\",\r\n     \"categoryName\": \"TestForm\",\r\n     \"categoryDescription\": \"Postman categoryDescription\"\r\n}"
 				},
-				"url": "{{Local_URL}}/form/new"
+				"url": "{{Local_URL}}/form/categories/new"
 			},
 			"response": []
 		},
@@ -1230,23 +1230,23 @@
 	],
 	"variable": [
 		{
-			"id": "dd89d70a-b423-4496-872e-9b7916d1c86e",
+			"id": "3e256701-0839-4aaf-9a8e-655e40dc6414",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "4280435d-5b5f-4167-98c7-a3f8aa253e6f",
+			"id": "cd3aee17-e51f-4383-8929-f492bacade02",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "5cfd1279-1664-42c3-83aa-d63a769a4c32",
+			"id": "e0fe339a-641e-49b9-9ee0-1eaf2431177a",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "33ad7a63-53a7-40d5-8345-8526420340b8",
+			"id": "3d90d9d5-f673-494b-b100-1578bca5f218",
 			"key": "categoryID",
 			"value": ""
 		}
