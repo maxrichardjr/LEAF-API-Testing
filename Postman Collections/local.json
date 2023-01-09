@@ -601,10 +601,10 @@
 			},
 			"request": {
 				"auth": {
-					"type": "ntlm",
-					"ntlm": {
-						"password": "",
-						"username": ""
+					"type": "basic",
+					"basic": {
+						"password": "tester",
+						"username": "tester"
 					}
 				},
 				"method": "POST",
@@ -1292,23 +1292,23 @@
 	],
 	"variable": [
 		{
-			"id": "2059a328-0329-48e0-8a00-3bba7ee9b5d4",
+			"id": "3f9ed08b-7d8c-4dc1-863c-81ee7232baca",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "5fd8b4ae-3f74-4bc4-a63d-29cd4f4b8172",
+			"id": "d255ef2b-4acd-4925-93d8-0876a94646ce",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "3110584f-7ee9-4abf-9861-0ff318f6ee5d",
+			"id": "535da820-2a5a-46b2-bc9f-2b972b513e9f",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "215316ee-f930-44e8-b59f-f5ad9166110f",
+			"id": "c8143167-237e-42fb-b45b-75f38dce2ff7",
 			"key": "categoryID",
 			"value": ""
 		}
