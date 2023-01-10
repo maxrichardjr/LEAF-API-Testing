@@ -653,8 +653,11 @@
 			},
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": {}
+					"type": "ntlm",
+					"ntlm": {
+						"password": "",
+						"username": ""
+					}
 				},
 				"method": "POST",
 				"header": [
@@ -1366,23 +1369,23 @@
 	],
 	"variable": [
 		{
-			"id": "023dd836-34be-46ea-a198-38519df98f49",
+			"id": "f654a9a7-b371-45e5-95be-48f279dee032",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "59cbd0ee-e8b6-4694-acb0-99a107e83854",
+			"id": "d65bf2aa-48ef-4dd0-a7df-722266c6f409",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "002ac225-8b3f-4906-aee0-19803084710e",
+			"id": "39b2f0d9-4abc-48a7-9df4-cc041a47253a",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "7171f98a-8b61-4a50-82c2-77519a9a17d7",
+			"id": "39b578dc-025b-4148-8884-a0c66dbecf86",
 			"key": "categoryID",
 			"value": ""
 		}
