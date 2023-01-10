@@ -630,7 +630,7 @@
 							"  }\r",
 							"\r",
 							"  csrfRequest.upsertHeader({\r",
-							"    key: 'x-csrf-token',\r",
+							"    key: 'xsrf-token' \t\t\t\t//'x-csrf-token',\r",
 							"    value: 'fetch'\r",
 							"  });\r",
 							"\r",
@@ -1404,23 +1404,23 @@
 	],
 	"variable": [
 		{
-			"id": "b4e8aed2-2da3-4b62-81d4-f0d76d4dbc7b",
+			"id": "578f13d8-90ed-4a4d-8957-75542a5865c9",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "c1d3511f-da34-4918-8a3c-9f731b4ff16b",
+			"id": "24ff4f55-90ec-4ecd-a0b7-47a9f122327f",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "89c8c0e9-3fed-4ec4-ab07-e2aceb2600a8",
+			"id": "ce4d076c-59eb-42db-bbb2-f0e4849867eb",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "1f30c133-1060-4aaf-b5ae-df7596fdcf14",
+			"id": "5ac84274-f6a5-4287-91cf-50afe4044eae",
 			"key": "categoryID",
 			"value": ""
 		}
