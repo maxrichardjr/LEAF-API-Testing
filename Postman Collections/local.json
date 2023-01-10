@@ -566,11 +566,11 @@
 						"id": "1e6bef6d-a600-48a8-b2b8-09d084aed38b",
 						"exec": [
 							"\r",
-							"console.log(postman);\r",
+							"//console.log(postman);\r",
 							"\r",
-							"var xsrfCookie = pm.getRequestCookie(\"XSRF-TOKEN\");\r",
 							"//var xsrfCookie = pm.getRequestCookie(\"XSRF-TOKEN\");\r",
-							"pm.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);\r",
+							"//var xsrfCookie = pm.getRequestCookie(\"XSRF-TOKEN\");\r",
+							"//pm.setEnvironmentVariable(\"xsrf-token\", xsrfCookie.value);\r",
 							"\t//console.log(xsrfCookie.value);\r",
 							"\r",
 							"\r",
@@ -1399,23 +1399,23 @@
 	],
 	"variable": [
 		{
-			"id": "1eb81e8e-f710-4d19-ae3f-24d9612b8c14",
+			"id": "1f4d7ab3-f998-40ff-8b00-6fd9150fd60f",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "924e7764-89d1-407c-bca9-08bd23fc7d39",
+			"id": "827e5986-cd20-4adc-a5bc-6428fbacfc6f",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "0ccb96d7-fff1-43e9-857b-2738e71339b0",
+			"id": "f1a2a9da-4004-4ee5-b00e-3418710aa82e",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "634c1f69-3e79-4d4a-8631-702a6869128e",
+			"id": "d1f62e83-a068-4a78-9758-229562afd961",
 			"key": "categoryID",
 			"value": ""
 		}
