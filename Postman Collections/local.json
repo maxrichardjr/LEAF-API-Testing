@@ -661,8 +661,7 @@
 					{
 						"key": "X-XSRF-TOKEN",
 						"value": "{{xsrf-token}}",
-						"type": "text",
-						"disabled": true
+						"type": "text"
 					}
 				],
 				"body": {
@@ -1367,23 +1366,23 @@
 	],
 	"variable": [
 		{
-			"id": "af5f580a-cdcb-4d36-96e8-51dcd401a29b",
+			"id": "34aa0d6a-c794-4f9e-b0e1-a294b7783a40",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "7db88a1d-db92-4044-986d-1ca0bd2ac11c",
+			"id": "1e2c085a-389a-4323-a9f0-7659fa8b8e4b",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "0e04d686-cd85-41c6-8a68-59b8510783b8",
+			"id": "73635a41-355a-4ffb-8af0-5f4e64b75e51",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "13941bad-1e02-4c1e-8a78-8224a42c4214",
+			"id": "529a8762-49b1-4288-a34c-3fccc6bd078c",
 			"key": "categoryID",
 			"value": ""
 		}
