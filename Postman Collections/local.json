@@ -705,11 +705,14 @@
 					"raw": "{\r\n    \"name\": \"TestForm\",\r\n    \"description\": \"TestDescription\",\r\n    CSRFToken: token\r\n}"
 				},
 				"url": {
-					"raw": "{{Local_URL}}/form/new",
+					"raw": "http://localhost/LEAF_Request_Portal/api/form/new",
+					"protocol": "http",
 					"host": [
-						"{{Local_URL}}"
+						"localhost"
 					],
 					"path": [
+						"LEAF_Request_Portal",
+						"api",
 						"form",
 						"new"
 					],
@@ -1399,23 +1402,23 @@
 	],
 	"variable": [
 		{
-			"id": "1f4d7ab3-f998-40ff-8b00-6fd9150fd60f",
+			"id": "ccfb2433-8535-4436-bbc3-37e3b4343788",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "827e5986-cd20-4adc-a5bc-6428fbacfc6f",
+			"id": "e67bea45-c2d7-4214-be46-09516834c020",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "f1a2a9da-4004-4ee5-b00e-3418710aa82e",
+			"id": "47cb6ee2-0928-4691-a5c8-b0be04ca151f",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "d1f62e83-a068-4a78-9758-229562afd961",
+			"id": "aadf91a2-55a3-4ea2-ae01-c06d64d707f1",
 			"key": "categoryID",
 			"value": ""
 		}
