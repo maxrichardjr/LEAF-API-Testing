@@ -179,7 +179,7 @@
 						}
 					}
 				},
-				"url": "{{Local_URL}}/form/categories"
+				"url": "{{Local_URL}}/api/form/categories"
 			},
 			"response": []
 		},
@@ -1374,23 +1374,23 @@
 	],
 	"variable": [
 		{
-			"id": "12b62b5b-7a7f-4eb7-95dc-823234c17a66",
+			"id": "06284978-24dd-440d-bb55-46a326fb4df6",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "d83c898a-2d1f-40f9-a988-544f1aba15dd",
+			"id": "395e22c1-f45e-49d9-b787-491f277917a7",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "1f20e099-59c2-4f9f-9b86-955480a72fde",
+			"id": "742be9a8-907f-40ad-9f2a-bcf8e2aad894",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "d245b9c6-d4b2-4cc0-92ac-ae0ec5c9cad8",
+			"id": "87a9b4d8-b316-4e87-92e8-6ee0a3359c7d",
 			"key": "categoryID",
 			"value": ""
 		}
