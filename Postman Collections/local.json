@@ -262,7 +262,7 @@
 							"\r",
 							"\r",
 							"pm.environment.set(\"xsrf-token\", decodeURIComponent(pm.cookies.get(\"XSRF-TOKEN\")));\r",
-							"\tconsole.log(\"XSRF-TOKEN\");\r",
+							"\tconsole.log(\"xsrf-token\");\r",
 							"\r",
 							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
@@ -1373,23 +1373,23 @@
 	],
 	"variable": [
 		{
-			"id": "1af7c690-7384-410b-bc82-5fe06ae0a339",
+			"id": "0bed7399-c62e-4f7e-87c4-a47ce4afa161",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "32532bf1-1ee3-4bdc-9ebe-e0998d9b085b",
+			"id": "1f737100-6fc6-409d-a1a5-309fd591ff3b",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "881d79dd-fea9-44e2-9fff-c241c08b8a62",
+			"id": "a99bb498-129a-4f52-8f5e-09fd2fbe3ee6",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "4a535826-4107-41c2-bc59-a202f7accff6",
+			"id": "f67b023b-b7e4-4de5-8fec-f9fca6e9a59d",
 			"key": "categoryID",
 			"value": ""
 		}
