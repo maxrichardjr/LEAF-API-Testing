@@ -261,11 +261,14 @@
 							"//cookieJar.set(URL, { name: PHPSESSID, value: cookieJar.cookie, httpOnly: true }, callback (error, cookie));\r",
 							"\r",
 							"\r",
+							"pm.environment.set(\"xsrf-token\", decodeURIComponent(pm.cookies.get(\"XSRF-TOKEN\")));\r",
+							"\r",
 							"pm.test(\"Form-Categories.  Status = 200\", function () {\r",
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
 							"var time = pm.response.responseTime;\r",
+							"\r",
 							"pm.test('Response time: ' + time + ' ms', () => pm.response.to.have.status(200));\r",
 							"\r",
 							"\r",
@@ -1369,23 +1372,23 @@
 	],
 	"variable": [
 		{
-			"id": "973ee687-eb1a-4d56-b041-e7f875d67360",
+			"id": "86cbd43b-b47e-4a2d-95ef-0bf574122107",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "59bcbaba-33e0-4425-97d1-1586df3c30ff",
+			"id": "3b26eab8-0480-4d77-bf00-392c67959652",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "752348ac-ce3a-44b1-a973-6df753646a13",
+			"id": "283864b2-75de-4779-8267-c5955bf52d15",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "bfd504d0-62a5-4eef-ae14-354e5777ca8a",
+			"id": "6a6e5e09-56b2-4f75-9a14-329f05a66d50",
 			"key": "categoryID",
 			"value": ""
 		}
