@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "27d352f0-7dcf-4ce1-8748-e3c0a61e8ef5",
-		"name": "LEAF API Localhost",
+		"name": "LEAF-API-Localhost",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -1374,23 +1374,23 @@
 	],
 	"variable": [
 		{
-			"id": "109c0085-83f8-42d2-97a4-0369333974ab",
+			"id": "442b9bea-3f82-4da2-82a1-6a1be20e5756",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string"
 		},
 		{
-			"id": "d8363514-0f3d-4c0e-901c-845f632affdc",
+			"id": "a68d3e1d-aee9-4626-b50d-e0a894222130",
 			"key": "formCategories",
 			"value": ""
 		},
 		{
-			"id": "22fe32a2-2538-43fb-a425-34e1a64a1e04",
+			"id": "bc5ed56d-e311-4dc5-95fa-467099b70551",
 			"key": "CategoryID",
 			"value": ""
 		},
 		{
-			"id": "bfd967ef-7bbd-4aa4-b688-df4e066798e6",
+			"id": "fc9be136-6d71-45fc-bbe9-fb95c756023e",
 			"key": "categoryID",
 			"value": ""
 		}
