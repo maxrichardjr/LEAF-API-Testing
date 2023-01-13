@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "0f46832f-6cb3-4dff-8150-55d06ea69a82",
-		"name": "LEAF API PreProd",
+		"name": "LEAF-API-PreProd",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
@@ -1049,7 +1049,7 @@
 	],
 	"variable": [
 		{
-			"id": "5f9b7381-3e74-4184-b317-07e3053f2822",
+			"id": "9499b3a4-21f3-4f2d-a49a-c243b106ffac",
 			"key": "CSFRToken",
 			"value": "Input CSFR Token",
 			"type": "string",
